@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+:root {
+       --main-clr: rgb(255, 187, 0);
+       --second-clr: gray;
+       --third-clr: rgb(149 120 62);
+       --hover-clr: #fff;
+       --bg-clr: rgb(18, 18, 29);
+       --fw300: 300;
+       --fw400: 400;
+       --fw700: 700;
+}
+
 * {
        margin: 0;
        padding: 0;
@@ -12,6 +23,7 @@
        font-family: "Rubik", sans-serif;
 }
 
+
 ul {
        margin-top: 0 !important;
        margin-bottom: 0 !important;
@@ -20,7 +32,7 @@ ul {
 
 body {
        position: relative;
-       background-color: #efefef !important;
+       background-color: #fff !important;
 }
 
 body::-webkit-scrollbar {
@@ -34,18 +46,8 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
        background-color: var(--main-clr);
        border-radius: 10px;
-       outline: 1px solid slategrey;
 }
 
-:root {
-       --main-clr: rgb(255, 187, 0);
-       --second-clr: gray;
-       --hover-clr: #fff;
-       --bg-clr: rgb(18, 18, 29);
-       --fw300: 300;
-       --fw400: 400;
-       --fw700: 700;
-}
 
 /* Section loading Page */
 #loading {
@@ -73,80 +75,8 @@ body::-webkit-scrollbar-thumb {
        display: flex;
        flex-direction: column;
        align-items: center;
+       overflow: hidden !important;
 }
-
-/* Header Page */
-header {
-       width: 100%;
-       display: flex;
-       align-items: flex-start;
-       justify-content: flex-start;
-       flex-wrap: wrap;
-       row-gap: 8px;
-       column-gap: 50px;
-       background: var(--bg-clr);
-       color: #fff;
-       font-size: 14px;
-       padding: 20px 25px;
-}
-
-.sociaLink ul {
-       display: flex;
-       align-items: center;
-       justify-content: space-between;
-       column-gap: 20px;
-}
-
-.sociaLink ul li a>i {
-       font-size: 15px;
-       color: var(--main-clr);
-       transition: all 0.3s ease-in-out;
-}
-
-.sociaLink ul li a:hover i {
-       color: var(--hover-clr);
-}
-
-.emailCom span>i,
-.phoneCom span>i {
-       margin-right: 0.5rem;
-}
-
-/* Nav Page */
-nav {
-       width: 90%;
-       display: flex;
-       align-items: center;
-       justify-content: flex-start;
-       column-gap: 50px;
-       margin: 10px 0 !important;
-}
-nav .logoPage{
-       width: 35%;
-}
-
-nav .logoPage a img {
-       height: 68px;
-       vertical-align: middle;
-       border-style: none;
-}
-
-nav .linksPage ul {
-       display: flex;
-       align-items: center;
-       justify-content: flex-start;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 /* Seciton socail Bar */
 .socailBar {
@@ -192,6 +122,178 @@ nav .linksPage ul {
        color: black;
        padding-top: 10px;
        padding-bottom: 10px;
+}
+/* Header Page */
+header {
+       width: 100%;
+       overflow: hidden;
+       display: flex;
+       align-items: flex-start;
+       justify-content: center;
+       flex-wrap: wrap;
+       row-gap: 10px;
+       column-gap: 50px;
+       background: var(--bg-clr);
+       color: #fff;
+       font-size: 14px;
+       padding: 10px 25px;
+}
+
+.sociaLink ul {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       column-gap: 20px;
+}
+
+.sociaLink ul li a>i {
+       font-size: 15px;
+       color: var(--main-clr);
+       transition: all 0.3s ease-in-out;
+}
+
+.sociaLink ul li a:hover i {
+       color: var(--hover-clr);
+}
+
+.emailCom span>i,
+.phoneCom span>i {
+       margin-right: 0.5rem;
+}
+
+/* Nav Page */
+nav {
+       position: relative;
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+nav .wrapperNav {
+       width: 90%;
+       display: flex;
+       align-items: center;
+       justify-content: flex-start;
+       column-gap: 50px;
+       margin: 10px 0 !important;
+}
+
+nav .wrapperNav .logoPage {
+       width: 35%;
+}
+
+nav .wrapperNav .logoPage a img {
+       height: 55px;
+       vertical-align: middle;
+       border-style: none;
+       /* opacity: ; */
+}
+
+nav .wrapperNav .linksPage {
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: flex-end;
+}
+
+nav .wrapperNav .linksPage>span i {
+       font-size: 2.3rem;
+       color: var(--third-clr);
+       cursor: pointer;
+}
+
+nav .wrapperNav .linksPage .menuMobil {
+       position: absolute;
+       width: 100%;
+       bottom: -255%;
+       left: 100%;
+       border-radius: 0 0 15px 15px;
+       background-color: var(--third-clr);
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       row-gap: 10px;
+       padding: 10px 0;
+       transition: all 0.5s ease-in-out;
+}
+
+nav .wrapperNav .linksPage .menuMobil li a {
+       color: #fff;
+       font-size: 1.1rem;
+       transition: all 0.4s ease-in-out;
+}
+
+nav .wrapperNav .linksPage .menuMobil li a:hover {
+       color: var(--bg-clr);
+}
+
+nav .wrapperNav .linksPage .menuTap {
+       display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Google Reviews Section*/
+.reviewSec{
+       width: 90%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding:  3rem 0 ;
+}
+.reviewSec .leftReviewSec{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       row-gap: 10px;
+}
+.reviewSec .leftReviewSec span{
+       font-weight: 500;
+}
+.reviewSec .leftReviewSec span:nth-child(1){
+       font-size: 2.5rem;
+       font-weight: 500;
+}
+.reviewSec .leftReviewSec ul{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       column-gap: 8px;
+}
+.reviewSec .leftReviewSec ul li > i{
+       font-size: 2.2rem;
+       font-weight: 900;
+       color: var(--main-clr);
+}
+.reviewSec .leftReviewSec img{
+       height: 50px;
+}
+
+/* FAQ Section*/
+.faqSec {
+       padding-right: 15px !important;
+       padding-left: 15px !important;
+}
+
+.card-header {
+       background-color: #fff !important;
+       border: 1px solid var(--main-clr) !important;
+}
+
+.card-header:first-child {
+       border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
 }
 
 /* Footer Section*/
@@ -245,9 +347,11 @@ nav .linksPage ul {
 /* ########## */
 .footerSec .footerWrapper {
        display: flex;
+       flex-wrap: wrap;
        align-items: center;
-       justify-content: center;
+       justify-content: flex-start;
        column-gap: 80px;
+       padding: 0 20px;
 }
 
 .footerSec .subSocialink {
@@ -286,7 +390,72 @@ nav .linksPage ul {
 @media (max-width:767px) {}
 
 /* Tablet Screen  */
-@media (min-width:990px) {}
+@media (min-width:990px) {
+
+       /* Header */
+       header {
+              padding: 20px 25px;
+       }
+       /* Nav Bar && menuMobil */
+       .menuMobil,
+       .showMenu {
+              display: none;
+       }
+
+       nav .wrapperNav .linksPage {
+              justify-content: flex-start;
+       }
+
+       nav .wrapperNav .linksPage .menuTap {
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              column-gap: 8%;
+       }
+
+       nav .wrapperNav .linksPage .menuTap li {
+              /* background: var(--main-clr); */
+              position: relative;
+              padding: 5px 2px;
+       }
+
+       .activeTap {
+              position: relative;
+       }
+
+       .activeTap::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              height: 4px;
+              border-radius: 6px;
+              background-color: var(--main-clr);
+       }
+
+       nav .wrapperNav .linksPage .menuTap li::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 0;
+              height: 4px;
+              border-radius: 6px;
+              background-color: var(--main-clr);
+              transition: all 0.4s ease-in-out;
+       }
+
+       nav .wrapperNav .linksPage .menuTap li:hover::after {
+              width: 100%;
+       }
+
+       nav .wrapperNav .linksPage .menuTap li a {
+              color: #000;
+              font-size: 1.2rem;
+       }
+}
 
 /* Laptop Screen  */
 @media (min-width:1400px) {}
