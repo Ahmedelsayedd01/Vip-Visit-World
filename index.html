@@ -41,6 +41,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- Splide Liberary to swip -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+    <script>
+      /* BUT Sniper When load Page */
+      $(window).on("load", function () {
+        $("#loading").hide();
+      });
+    </script>
   </head>
   <body>
     <!-- Loading Page Spiner -->
@@ -97,19 +109,34 @@
       </header>
       <!-- Nav Page Section -->
       <nav>
-        <div class="logoPage">
-          <a href="./index.html">
-            <img src="images/logo page.png" alt="logo" />
-          </a>
-        </div>
-        <div class="linksPage">
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./Pages/aboutUs.html">About Us</a></li>
-            <li><a href="./Pages/vise.html">Vise</a></li>
-            <li><a href="./Pages/tickets.html">Tickets</a></li>
-            <li><a href="./Pages/hotels.html">Hotels</a></li>
-          </ul>
+        <div class="wrapperNav">
+          <div class="logoPage">
+            <a href="./index.html">
+              <img src="images/logo page.png" alt="logo" />
+            </a>
+          </div>
+          <div class="linksPage">
+            <span class="showMenu">
+              <i class="fa-solid fa-bars"></i>
+            </span>
+            <span class="hideMenu d-none">
+              <i class="fa-solid fa-xmark"></i>
+            </span>
+            <ul class="menuMobil">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./Pages/aboutUs.html">About Us</a></li>
+              <li><a href="./Pages/vise.html">Vise</a></li>
+              <li><a href="./Pages/tickets.html">Tickets</a></li>
+              <li><a href="./Pages/hotels.html">Hotels</a></li>
+            </ul>
+            <ul class="menuTap">
+              <li class="activeTap"><a href="./index.html">Home</a></li>
+              <li><a href="./Pages/aboutUs.html">About Us</a></li>
+              <li><a href="./Pages/vise.html">Vise</a></li>
+              <li><a href="./Pages/tickets.html">Tickets</a></li>
+              <li><a href="./Pages/hotels.html">Hotels</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
       <!-- Hero Section -->
@@ -123,9 +150,251 @@
       <!-- Agent Section -->
       <section></section>
       <!-- Google Reviews Section  -->
-      <section></section>
+      <section class="reviewSec">
+        <div class="leftReviewSec">
+          <span>Good</span>
+          <ul>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li>
+              <i class="fas fa-star-half-alt"></i>
+            </li>
+          </ul>
+          <span>Based on 466 Reviews </span>
+          <img src="images/google.png" alt="google" />
+        </div>
+        <div class="rightReviewSec">
+          <section class="splide" aria-labelledby="carousel-heading">
+            <h2 id="carousel-heading">Basic Structure Example</h2>
+            <!-- <div class="splide__arrows splide__arrows--ltr">
+              <button
+                class="splide__arrow splide__arrow--prev"
+                type="button"
+                aria-label="Previous slide"
+                aria-controls="splide01-track"
+              >
+                aaa
+              </button>
+              <button
+                class="splide__arrow splide__arrow--next"
+                type="button"
+                aria-label="Next slide"
+                aria-controls="splide01-track"
+              >
+                ssss
+              </button>
+            </div> -->
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">Slide 01</li>
+                <li class="splide__slide">Slide 02</li>
+                <li class="splide__slide">Slide 03</li>
+                <li class="splide__slide">Slide 03</li>
+                <li class="splide__slide">Slide 03</li>
+                <li class="splide__slide">Slide 03</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </section>
       <!-- FAQ Section -->
-      <section></section>
+      <section
+        class="faqSec container-fluid pt-5 pb-5"
+        style="background-color: ghostwhite"
+      >
+        <div class="container">
+          <h2>FAQ</h2>
+          <div id="accordion" class="mt-4">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card border mb-3">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <a
+                        class="btn"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        What is the best desert safari in Dubai?
+                      </a>
+                    </h5>
+                  </div>
+
+                  <div
+                    id="collapseOne"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      Looking for an unforgettable desert safari experience in
+                      Dubai? Look no further than Royal Vision Tourism. As part
+                      of the Emirates Group, we are committed to providing the
+                      highest standards of service and safety. Our desert safari
+                      deals in Dubai include everything you need for a fantastic
+                      day out in the desert, from pick-up and drop-off to food
+                      and beverages and other desert activities. Relax and enjoy
+                      your adventure!
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card border mb-3">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <a
+                        class="btn collapsed"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        What is included in a Dubai deset Safari
+                      </a>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      Book Premium Desert Safari and take the advantage of our
+                      thrilling Arabian desert adventure along with the other
+                      desert activities and entertainment. Ideal for people who
+                      are looking for an adventure, the desert safari offers you
+                      a dune bashing opportunities in the desert of Dubai. With
+                      a 4 x 4 vehicle, this journey is safe and at the same time
+                      exhilarating too.
+                      <br /><br /><b>Inclusions</b>
+                      <ul>
+                        <li>
+                          Experience high level of personalized services on this
+                          desert safari.
+                        </li>
+                        <li>
+                          It’s particularly great for our guests looking for
+                          utmost privacy and comforts in their desert adventure.
+                        </li>
+                        <li>
+                          Feel the thrill of a lifetime with an electrifying
+                          dune bash over colossal desert sands.
+                        </li>
+                        <li>
+                          Take in desert sunset views and enjoy more cultural
+                          activities such as camel ride, henna tattooing, Shisha
+                          smoking etc.
+                        </li>
+                        <li>
+                          Savor a lavish BBQ dinner complete with both
+                          vegetarian and non-vegetarian dishes.
+                        </li>
+                        <li>
+                          Watch traditional Arabic performances including Belly
+                          Dance and Tanura show.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card border mb-3">
+                  <div class="card-header" id="heading3">
+                    <h5 class="mb-0">
+                      <a
+                        class="btn"
+                        data-toggle="collapse"
+                        data-target="#collapse3"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        How can I book a Tours &amp; Activities in Dubai?
+                      </a>
+                    </h5>
+                  </div>
+
+                  <div
+                    id="collapse3"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      Booking a Tours &amp; Activities in Dubai is now easier
+                      than ever. You can choose from a variety of packages and
+                      inclusions, depending on your needs. Royal Vision Tourism
+                      makes it easy for you to book your Tours &amp; Activities
+                      online, so all you have to do is select the dates and
+                      enjoy your experience! So, how do you book a Tours &amp;
+                      Activities in Dubai? It's simple! Just follow these easy
+                      steps:
+                      <br />
+                      <br />
+                      <ul>
+                        <li>Choose the package that suits you best</li>
+                        <li>Select the dates for your experience</li>
+                        <li>Click and Pay</li>
+                        <li>
+                          Sit back and relax - we'll take care of the rest!
+                        </li>
+                      </ul>
+
+                      So, what are you waiting for? Book your Tours &amp;
+                      Activities in Dubai today and enjoy an experience you'll
+                      never forget!
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card border mb-3">
+                  <div class="card-header" id="heading4">
+                    <h5 class="mb-0">
+                      <a
+                        class="btn"
+                        data-toggle="collapse"
+                        data-target="#collapse4"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        Must-see attractions and sights in Dubai
+                      </a>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapse4"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>Atlantis The Palm</li>
+                        <li>At The Top, Burj Khalifa</li>
+                        <li>Burj Al Arab Jumeirah</li>
+                        <li>Desert safari</li>
+                        <li>Dubai Aquarium &amp; Underwater Zoo</li>
+                        <li>Dubai Frame</li>
+
+                        <li>Dubai Miracle Garden</li>
+                        <li>Global Village</li>
+                        <li>The Dubai Mall</li>
+                        <li>The View at the Palm</li>
+                        <li>Museum of theFuture</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Footer Section -->
       <footer class="container-fluid pt-lg-5 pt-md-5 pt-sm-5 pt-5 footerSec">
         <div class="footerWrapper">
@@ -278,9 +547,9 @@
           <div class="col-lg-4 col-md-6 pt-4 pt-lg-0">
             <iframe
               class="mapSec"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3405.88002039504!2d55.29523106447941!3d25.25699210721517!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef58f4bbe04433b%3A0x2bcb8ba3105c1a39!2sTHE%20ROYAL%20VISION%20TOURISM%20LLC!5e0!3m2!1sen!2sae!4v1694417634512!5m2!1sen!2sae"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d465132.97329578403!2d54.22896190509892!3d24.38647391118072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e440f723ef2b9%3A0xc7cc2e9341971108!2sAbu%20Dhabi%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2seg!4v1715882994579!5m2!1sen!2seg"
               style="
-                border: 2px solid rgb(249, 165, 26);
+                border: 2px solid rgb(249, 165, 26) !important;
                 width: 100%;
                 height: 250px;
               "
@@ -315,11 +584,26 @@
     <!-- Container page -->
     <script>
       $(document).ready(function () {
-        $(window).on("load", function () {
-          $("#loading").hide();
-          console.log("ssss");
+        /* Splide Liberary */
+        var splide = new Splide(".splide", {
+          perPage: 3,
+          focus: 0,
+          omitEnd: true,
         });
-        console.log("first");
+
+        splide.mount();
+        /* Show && hide menu */
+        $(".showMenu").click(function () {
+          $(this).addClass("d-none");
+          $(".hideMenu").removeClass("d-none");
+          $(".menuMobil").css("left", "0");
+        });
+        /* ######### */
+        $(".hideMenu").click(function () {
+          $(this).addClass("d-none");
+          $(".showMenu").removeClass("d-none");
+          $(".menuMobil").css("left", "215%");
+        });
       });
     </script>
   </body>
