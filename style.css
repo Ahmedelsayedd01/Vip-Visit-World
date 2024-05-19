@@ -89,7 +89,7 @@ body::-webkit-scrollbar-thumb {
        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
        border-radius: 15px 0px 0 15px;
        background-color: var(--main-clr);
-       z-index: 100000;
+       z-index: 10;
 }
 
 .socailBar a {
@@ -123,6 +123,7 @@ body::-webkit-scrollbar-thumb {
        padding-top: 10px;
        padding-bottom: 10px;
 }
+
 /* Header Page */
 header {
        width: 100%;
@@ -216,6 +217,7 @@ nav .wrapperNav .linksPage .menuMobil {
        align-items: center;
        row-gap: 10px;
        padding: 10px 0;
+       z-index: 100;
        transition: all 0.5s ease-in-out;
 }
 
@@ -232,7 +234,19 @@ nav .wrapperNav .linksPage .menuMobil li a:hover {
 nav .wrapperNav .linksPage .menuTap {
        display: none;
 }
-
+/* Hero Section*/
+.heroSec{
+       width: 100%;
+       height: 20vh;
+       background-color: red;
+       overflow: hidden;
+}
+.heroSec .splide__list .splide__slide img{
+       width: 100%;
+       height: 100px;
+       object-fit: cover;
+       object-position: center;
+}
 
 
 
@@ -245,40 +259,85 @@ nav .wrapperNav .linksPage .menuTap {
 
 
 /* Google Reviews Section*/
-.reviewSec{
+.reviewSec {
        width: 90%;
+       margin-top: 20px;
        display: flex;
-       flex-direction: column;
+       flex-wrap: wrap;
        align-items: center;
-       padding:  3rem 0 ;
+       justify-content: center;
+       padding: 3rem 0;
 }
-.reviewSec .leftReviewSec{
+
+.reviewSec .leftReviewSec {
        display: flex;
        flex-direction: column;
        align-items: center;
        justify-content: center;
        row-gap: 10px;
 }
-.reviewSec .leftReviewSec span{
+
+.reviewSec .leftReviewSec span {
        font-weight: 500;
 }
-.reviewSec .leftReviewSec span:nth-child(1){
+
+.reviewSec .leftReviewSec span:nth-child(1) {
        font-size: 2.5rem;
        font-weight: 500;
 }
-.reviewSec .leftReviewSec ul{
+
+.reviewSec .leftReviewSec ul {
        display: flex;
        align-items: center;
        justify-content: space-between;
        column-gap: 8px;
 }
-.reviewSec .leftReviewSec ul li > i{
+
+.reviewSec .leftReviewSec ul li>i {
        font-size: 2.2rem;
        font-weight: 900;
        color: var(--main-clr);
 }
-.reviewSec .leftReviewSec img{
+
+.reviewSec .leftReviewSec img {
        height: 50px;
+}
+.reviewSec .rightReviewSec {
+      margin-top: 30px;
+      cursor: grab;
+}
+
+.splide__slide .cardd {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       row-gap: 10px;
+}
+
+.splide__slide .cardd .headCard {
+       text-align: center;
+}
+
+.splide__slide .cardd .cardTitle {
+       width: 20%;
+       text-align: center;
+}
+.reviewSec .splide__pagination{
+bottom: -0.5em !important;
+}
+.reviewSec .splide__pagination__page.is-active {
+       background-color:var(--main-clr) !important;
+}
+.reviewSec .splide__slide .cardd .headCard img {
+       height: 100px;
+       width: 70%;
+       border-radius: 50%;
+       object-fit: cover;
+       object-position: center;
+       padding: 2px;
+       border: 3px solid var(--main-clr) !important;
 }
 
 /* FAQ Section*/
@@ -286,7 +345,6 @@ nav .wrapperNav .linksPage .menuTap {
        padding-right: 15px !important;
        padding-left: 15px !important;
 }
-
 .card-header {
        background-color: #fff !important;
        border: 1px solid var(--main-clr) !important;
@@ -295,6 +353,7 @@ nav .wrapperNav .linksPage .menuTap {
 .card-header:first-child {
        border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
 }
+
 
 /* Footer Section*/
 .footerSec {
@@ -396,6 +455,7 @@ nav .wrapperNav .linksPage .menuTap {
        header {
               padding: 20px 25px;
        }
+
        /* Nav Bar && menuMobil */
        .menuMobil,
        .showMenu {
@@ -455,6 +515,61 @@ nav .wrapperNav .linksPage .menuTap {
               color: #000;
               font-size: 1.2rem;
        }
+
+       /* Review Section */
+       .reviewSec {
+              justify-content: space-between;
+       }
+       
+       .reviewSec .leftReviewSec {
+              width: 30%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              row-gap: 10px;
+       }
+       
+       .reviewSec .rightReviewSec {
+             margin-top: 30px;
+             width: 70%;
+       }
+       
+       .splide__slide .cardd {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              row-gap: 10px;
+              overflow: hidden;
+       }
+       
+       .splide__slide .cardd .headCard {
+              text-align: center;
+       }
+       
+       .splide__slide .cardd .cardTitle {
+              text-align: center;
+              width: 95%;
+       }
+       .reviewSec .splide__pagination{
+       bottom: -0.5em !important;
+       }
+       .reviewSec .splide__pagination__page.is-active {
+              background-color:var(--main-clr) !important;
+       }
+       
+       .reviewSec .splide__slide .cardd .headCard img {
+              height: 100px;
+              width: 70%;
+              border-radius: 50%;
+              object-fit: cover;
+              object-position: center;
+              padding: 2px;
+              border: 3px solid var(--main-clr) !important;
+       }
+       
 }
 
 /* Laptop Screen  */
