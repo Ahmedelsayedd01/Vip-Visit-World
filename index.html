@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <!-- Icon Page -->
-    <link rel="icon" href="./images/logo page.png" />
+    <link rel="icon" href="./images/logo page.jpg" />
     <title>Vip Visit World</title>
     <!-- Icons Liberary -->
     <script
@@ -57,7 +57,7 @@
   <body>
     <!-- Loading Page Spiner -->
     <div id="loading">
-      <img id="loading-image" src="./images/logo page.png" alt="Loading..." />
+      <img id="loading-image" src="./images/logo page.jpg" alt="Loading..." />
     </div>
     <!-- Loading Page Spiner -->
     <!-- Container page -->
@@ -112,7 +112,7 @@
         <div class="wrapperNav">
           <div class="logoPage">
             <a href="./index.html">
-              <img src="images/logo page.png" alt="logo" />
+              <img src="images/logo page.jpg" alt="logo" />
             </a>
           </div>
           <div class="linksPage">
@@ -140,7 +140,35 @@
         </div>
       </nav>
       <!-- Hero Section -->
-      <section></section>
+      <section class="heroSec">
+        <section class="splide" aria-labelledby="carousel-heading">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="images/hero1.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/hero2.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/hero3.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/hero4.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/hero5.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/hero6.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/hero7.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
       <!-- Tickets Section -->
       <section></section>
       <!-- visa Section -->
@@ -167,33 +195,60 @@
         </div>
         <div class="rightReviewSec">
           <section class="splide" aria-labelledby="carousel-heading">
-            <h2 id="carousel-heading">Basic Structure Example</h2>
-            <!-- <div class="splide__arrows splide__arrows--ltr">
-              <button
-                class="splide__arrow splide__arrow--prev"
-                type="button"
-                aria-label="Previous slide"
-                aria-controls="splide01-track"
-              >
-                aaa
-              </button>
-              <button
-                class="splide__arrow splide__arrow--next"
-                type="button"
-                aria-label="Next slide"
-                aria-controls="splide01-track"
-              >
-                ssss
-              </button>
-            </div> -->
             <div class="splide__track">
               <ul class="splide__list">
-                <li class="splide__slide">Slide 01</li>
-                <li class="splide__slide">Slide 02</li>
-                <li class="splide__slide">Slide 03</li>
-                <li class="splide__slide">Slide 03</li>
-                <li class="splide__slide">Slide 03</li>
-                <li class="splide__slide">Slide 03</li>
+                <li class="splide__slide">
+                  <div class="cardd">
+                    <div class="headCard">
+                      <img src="./images/user 1.jpg" alt="user" />
+                    </div>
+                    <h4 class="cardName">yatain sankar</h4>
+                    <p class="cardTitle">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nesciunt assumenda tempore possimus molestias recusandae
+                      corporis hic fugiat dolorum sunt quam.
+                    </p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="cardd">
+                    <div class="headCard">
+                      <img src="./images/user 2.jpg" alt="user" />
+                    </div>
+                    <h4 class="cardName">yatain sankar</h4>
+                    <p class="cardTitle">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nesciunt assumenda tempore possimus molestias recusandae
+                      corporis hic fugiat dolorum sunt quam.
+                    </p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="cardd">
+                    <div class="headCard">
+                      <img src="./images/user 3.jpg" alt="user" />
+                    </div>
+                    <h4 class="cardName">yatain sankar</h4>
+                    <p class="cardTitle">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nesciunt assumenda tempore possimus molestias recusandae
+                      corporis hic fugiat dolorum sunt quam.
+                    </p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="cardd">
+                    <div class="headCard">
+                      <img src="./images/user 4.jpg" alt="user" />
+                    </div>
+                    <h4 class="cardName">yatain sankar</h4>
+                    <p class="cardTitle">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nesciunt assumenda tempore possimus molestias recusandae
+                      corporis hic fugiat dolorum sunt quam.
+                    </p>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
@@ -401,7 +456,7 @@
           <!-- Logo && Links Scoail -->
           <a href="./index.html">
             <img
-              src="./images/logo page.png"
+              src="./images/logo page.jpg"
               style="height: 80px; margin-bottom: 10px"
               alt="logo"
           /></a>
@@ -585,12 +640,44 @@
     <script>
       $(document).ready(function () {
         /* Splide Liberary */
-        var splide = new Splide(".splide", {
+        var splide = new Splide(".rightReviewSec .splide", {
+          autoplay: true,
+          arrows: false,
+          autoplay: true,
+          interval: 2000,
+          speed: 2000,
+          type: "loop",
           perPage: 3,
+          breakpoints: {
+            990: {
+              perPage: 1,
+            },
+            1200: {
+              perPage: 3,
+            },
+            // 1024: {
+            //   perPage: 3,
+            // },
+          },
           focus: 0,
+          gap: "2em",
+          omitEnd: true,
+        });
+        var splideHero = new Splide(".heroSec .splide", {
+          autoplay: true,
+          arrows: false,
+          pagination: false,
+          autoplay: true,
+          interval: 3000,
+          speed: 3000,
+          type: "loop",
+          perPage: 1,
+          focus: 0,
+          // gap: "2em",
           omitEnd: true,
         });
 
+        splideHero.mount();
         splide.mount();
         /* Show && hide menu */
         $(".showMenu").click(function () {
