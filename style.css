@@ -60,13 +60,13 @@ body::-webkit-scrollbar-thumb {
        text-align: center;
        align-items: center;
        background-color: #fff;
-       z-index: 100;
        justify-content: center;
+       z-index: 10000;
 }
 
 #loading-image {
-       width: 200px;
-       height: 200px;
+       width: 20%;
+       height: 20%;
 }
 
 /* Container Wrapper Page */
@@ -262,8 +262,8 @@ nav .wrapperNav .linksPage .menuTap {
 .heroSec .splide__list .splide__slide img {
        width: 100%;
        height: 100%;
-       object-fit: cover;
-       object-position: top;
+       object-fit: contain;
+       object-position: center;
        vertical-align: middle;
 }
 
@@ -305,8 +305,19 @@ nav .wrapperNav .linksPage .menuTap {
 
 
 
+/* Tickts Section*/
+.ticktsSec .splide .cardHotel img {
+       width: 100%;
+       height: 100%;
+       background-color: red;
+       transform: scale(1);
+       object-fit: cover;
+       object-position: right;
+       transition: all 0.4s ease-in-out;
+}
 /* Hotels Section*/
-.hotelsSec {
+.hotelsSec,
+.ticktsSec {
        width: 93% !important;
        margin-top: 20px;
        display: flex;
@@ -316,19 +327,22 @@ nav .wrapperNav .linksPage .menuTap {
        row-gap: 20px;
 }
 
-.hotelsSec .headerSec {
+.hotelsSec .headerSec,
+.ticktsSec .headerSec {
        width: 100%;
        display: flex;
        align-items: center;
        justify-content: space-between;
 }
 
-.hotelsSec .headerSec h2 {
+.hotelsSec .headerSec h2,
+.ticktsSec .headerSec h2 {
        font-size: 1.8rem;
        font-weight: 700;
 }
 
-.hotelsSec .headerSec .refLink {
+.hotelsSec .headerSec .refLink,
+.ticktsSec .headerSec .refLink {
        display: flex;
        align-items: baseline;
        justify-content: center;
@@ -337,22 +351,26 @@ nav .wrapperNav .linksPage .menuTap {
        transition: all 0.3s ease-in-out;
 }
 
-.hotelsSec .headerSec .refLink:hover {
+.hotelsSec .headerSec .refLink:hover,
+.ticktsSec .headerSec .refLink:hover {
        color: var(--second-clr);
 }
 
 /* #### */
-.hotelsSec .splide {
+.hotelsSec .splide,
+.ticktsSec .splide {
        width: 100%;
        margin-top: 20px !important;
        cursor: grab;
 }
 
-.hotelsSec .splide .splide__list {
+.hotelsSec .splide .splide__list,
+.ticktsSec .splide .splide__list {
        padding: 10px 0 !important;
 }
 
-.hotelsSec .splide .cardHotel {
+.hotelsSec .splide .cardHotel,
+.ticktsSec .splide .cardHotel {
        position: relative;
        width: 350px;
        height: 400px;
@@ -362,7 +380,8 @@ nav .wrapperNav .linksPage .menuTap {
        margin-bottom: 10px;
 }
 
-.hotelsSec .splide .cardHotel::after {
+.hotelsSec .splide .cardHotel::after,
+.ticktsSec .splide .cardHotel::after {
        content: "";
        position: absolute;
        width: 100%;
@@ -374,25 +393,28 @@ nav .wrapperNav .linksPage .menuTap {
        z-index: 10;
 }
 
-.hotelsSec .splide .cardHotel img {
+.hotelsSec .splide .cardHotel img{
        width: 100%;
        height: 100%;
        background-color: red;
        transform: scale(1);
        object-fit: cover;
+       object-position: center;
        transition: all 0.4s ease-in-out;
 }
 
-.hotelsSec .splide .cardHotel:hover img {
+.hotelsSec .splide .cardHotel:hover img,
+.ticktsSec .splide .cardHotel:hover img {
        transform: scale(1.2);
        filter: blur(1.5px);
 }
 
-.hotelsSec .splide .cardHotel span {
+.hotelsSec .splide .cardHotel span,
+.ticktsSec .splide .cardHotel span {
        position: absolute;
        width: 85%;
        left: 5%;
-       bottom: -10%;
+       top: 90%;
        color: var(--hover-clr);
        font-size: 1.5rem;
        text-align: left;
@@ -400,26 +422,33 @@ nav .wrapperNav .linksPage .menuTap {
        z-index: 30;
 }
 
-.hotelsSec .splide .cardHotel:hover span {
-       bottom: 30%;
+.hotelsSec .splide .cardHotel:hover span,
+.ticktsSec .splide .cardHotel:hover span {
+       top:   50%;
 }
 
-.hotelsSec .splide .splide__arrow {
+.hotelsSec .splide .splide__arrow,
+.ticktsSec .splide .splide__arrow {
        background-color: var(--main-clr) !important;
        height: 2.5rem !important;
        width: 2.5rem !important;
        top: -10% !important;
        transform: none !important;
 }
-.hotelsSec .splide__arrow--prev{
+
+.hotelsSec .splide__arrow--prev,
+.ticktsSec .splide__arrow--prev {
        left: inherit !important;
        right: 50px !important;
 }
-.hotelsSec .splide__arrow--next{
+
+.hotelsSec .splide__arrow--next,
+.ticktsSec .splide__arrow--next {
        right: 0% !important;
 }
 
-.hotelsSec .splide .splide__arrow svg {
+.hotelsSec .splide .splide__arrow svg,
+.ticktsSec .splide .splide__arrow svg {
        font-size: 1.2rem;
        fill: var(--hover-clr) !important;
 }
@@ -688,8 +717,18 @@ nav .wrapperNav .linksPage .menuTap {
        }
 
        /* Hero Section */
+       .heroSec {
+              width: 100%;
+              /* max-height: 82vh; */
+              /* background-color: red; */
+              overflow: hidden;
+       }
+
        .heroSec .splide__list .splide__slide img {
-              max-height: 100%;
+              /* max-height: 100%; */
+              width: inherit;
+              height: inherit;
+              /* object-position:50%; */
        }
 
 
