@@ -172,10 +172,65 @@
           </div>
         </section>
       </section>
-      <!-- Tickets Section -->
-      <section></section>
       <!-- visa Section -->
       <section></section>
+      <!-- Tickets Section -->
+      <section class="ticktsSec">
+        <div class="headerSec">
+          <h2>Tickets</h2>
+          <a class="refLink" href="./Pages/tickets.html"
+            >See All Tickets <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+        <section class="splide" aria-labelledby="carousel-heading">
+
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="cardHotel">
+                  <img src="./images/tickts4.webp" alt="tickt" />
+                  <span
+                    >Burj Al Arab and Emirates Palace 'most recommended'
+                    hotels</span
+                  >
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="cardHotel">
+                  <img src="./images/tickts4.webp" alt="tickt" />
+                  <span
+                    >VIP Access Pass</span
+                  >
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="cardHotel">
+                  <img src="./images/tickts4.webp" alt="tickt" />
+                  <span
+                    >Golden Ticket</span
+                  >
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="cardHotel">
+                  <img src="./images/tickts4.webp" alt="tickt" />
+                  <span
+                    >All-Access PassAll-Access Pass</span
+                  >
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="cardHotel">
+                  <img src="./images/tickts4.webp" alt="tickt" />
+                  <span
+                    >Front Row Experience</span
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
       <!-- Hotels Section -->
       <section class="hotelsSec">
         <div class="headerSec">
@@ -748,9 +803,24 @@
           gap: "2em",
           omitEnd: true,
         });
+        var splideTickts = new Splide(".ticktsSec .splide", {
+          autoplay: true,
+          // arrows: false,
+          pagination: false,
+
+          // interval: 3000,
+          // speed: 3000,
+          // type: "loop",
+          
+          perPage: "auto",
+          focus: 0,
+          gap: "2em",
+          omitEnd: true,
+        });
 
         splide.mount();
         splideHero.mount();
+        splideTickts.mount();
         splideHotels.mount();
         /* Show && hide menu */
         $(".showMenu").click(function () {
