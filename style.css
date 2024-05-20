@@ -234,18 +234,64 @@ nav .wrapperNav .linksPage .menuMobil li a:hover {
 nav .wrapperNav .linksPage .menuTap {
        display: none;
 }
+
 /* Hero Section*/
-.heroSec{
+.heroSec {
+       position: relative;
        width: 100%;
-       height: 20vh;
-       background-color: red;
+       max-height: 82vh;
+       /* background-color: red; */
        overflow: hidden;
 }
-.heroSec .splide__list .splide__slide img{
+
+.heroSec .splide__list .splide__slide {
+       position: relative;
+}
+
+.heroSec .splide__list .splide__slide::after {
+       content: "";
+       position: absolute;
+       top: 0;
+       left: 0;
        width: 100%;
-       height: 100px;
+       height: 1000%;
+       background-color: #000;
+       opacity: 0.2;
+}
+
+.heroSec .splide__list .splide__slide img {
+       width: 100%;
+       height: 100%;
        object-fit: cover;
-       object-position: center;
+       object-position: top;
+       vertical-align: middle;
+}
+
+.errowNext {
+       font-size: 2rem;
+       position: absolute;
+       bottom: 20px;
+       left: 50%;
+       color: var(--main-clr);
+       z-index: 100;
+       cursor: pointer;
+       transition: all 0.3s ease-in-out;
+       animation: MoveUpDown 1.3s linear infinite alternate;
+}
+
+.errowNext:hover {
+       color: var(--hover-clr);
+}
+
+@keyframes MoveUpDown {
+
+       0% {
+              bottom: 20px;
+       }
+
+       100% {
+              bottom: 10px;
+       }
 }
 
 
@@ -257,6 +303,126 @@ nav .wrapperNav .linksPage .menuTap {
 
 
 
+
+
+/* Hotels Section*/
+.hotelsSec {
+       width: 93% !important;
+       margin-top: 20px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       row-gap: 20px;
+}
+
+.hotelsSec .headerSec {
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+}
+
+.hotelsSec .headerSec h2 {
+       font-size: 1.8rem;
+       font-weight: 700;
+}
+
+.hotelsSec .headerSec .refLink {
+       display: flex;
+       align-items: baseline;
+       justify-content: center;
+       column-gap: 10px;
+       color: var(--main-clr);
+       transition: all 0.3s ease-in-out;
+}
+
+.hotelsSec .headerSec .refLink:hover {
+       color: var(--second-clr);
+}
+
+/* #### */
+.hotelsSec .splide {
+       width: 100%;
+       margin-top: 20px !important;
+       cursor: grab;
+}
+
+.hotelsSec .splide .splide__list {
+       padding: 10px 0 !important;
+}
+
+.hotelsSec .splide .cardHotel {
+       position: relative;
+       width: 350px;
+       height: 400px;
+       box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+       border-radius: 15px;
+       overflow: hidden;
+       margin-bottom: 10px;
+}
+
+.hotelsSec .splide .cardHotel::after {
+       content: "";
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       top: 0;
+       left: 0;
+       background-color: rgb(0, 0, 0);
+       opacity: 0.30;
+       z-index: 10;
+}
+
+.hotelsSec .splide .cardHotel img {
+       width: 100%;
+       height: 100%;
+       background-color: red;
+       transform: scale(1);
+       object-fit: cover;
+       transition: all 0.4s ease-in-out;
+}
+
+.hotelsSec .splide .cardHotel:hover img {
+       transform: scale(1.2);
+       filter: blur(1.5px);
+}
+
+.hotelsSec .splide .cardHotel span {
+       position: absolute;
+       width: 85%;
+       left: 5%;
+       bottom: -10%;
+       color: var(--hover-clr);
+       font-size: 1.5rem;
+       text-align: left;
+       transition: all 0.4s ease-in-out;
+       z-index: 30;
+}
+
+.hotelsSec .splide .cardHotel:hover span {
+       bottom: 30%;
+}
+
+.hotelsSec .splide .splide__arrow {
+       background-color: var(--main-clr) !important;
+       height: 2.5rem !important;
+       width: 2.5rem !important;
+       top: -10% !important;
+       transform: none !important;
+}
+.hotelsSec .splide__arrow--prev{
+       left: inherit !important;
+       right: 50px !important;
+}
+.hotelsSec .splide__arrow--next{
+       right: 0% !important;
+}
+
+.hotelsSec .splide .splide__arrow svg {
+       font-size: 1.2rem;
+       fill: var(--hover-clr) !important;
+}
 
 /* Google Reviews Section*/
 .reviewSec {
@@ -302,9 +468,10 @@ nav .wrapperNav .linksPage .menuTap {
 .reviewSec .leftReviewSec img {
        height: 50px;
 }
+
 .reviewSec .rightReviewSec {
-      margin-top: 30px;
-      cursor: grab;
+       margin-top: 30px;
+       cursor: grab;
 }
 
 .splide__slide .cardd {
@@ -324,12 +491,15 @@ nav .wrapperNav .linksPage .menuTap {
        width: 20%;
        text-align: center;
 }
-.reviewSec .splide__pagination{
-bottom: -0.5em !important;
+
+.reviewSec .splide__pagination {
+       bottom: -0.5em !important;
 }
+
 .reviewSec .splide__pagination__page.is-active {
-       background-color:var(--main-clr) !important;
+       background-color: var(--main-clr) !important;
 }
+
 .reviewSec .splide__slide .cardd .headCard img {
        height: 100px;
        width: 70%;
@@ -345,6 +515,7 @@ bottom: -0.5em !important;
        padding-right: 15px !important;
        padding-left: 15px !important;
 }
+
 .card-header {
        background-color: #fff !important;
        border: 1px solid var(--main-clr) !important;
@@ -516,11 +687,17 @@ bottom: -0.5em !important;
               font-size: 1.2rem;
        }
 
+       /* Hero Section */
+       .heroSec .splide__list .splide__slide img {
+              max-height: 100%;
+       }
+
+
        /* Review Section */
        .reviewSec {
               justify-content: space-between;
        }
-       
+
        .reviewSec .leftReviewSec {
               width: 30%;
               display: flex;
@@ -529,12 +706,12 @@ bottom: -0.5em !important;
               justify-content: center;
               row-gap: 10px;
        }
-       
+
        .reviewSec .rightReviewSec {
-             margin-top: 30px;
-             width: 70%;
+              margin-top: 30px;
+              width: 70%;
        }
-       
+
        .splide__slide .cardd {
               width: 100%;
               display: flex;
@@ -544,22 +721,24 @@ bottom: -0.5em !important;
               row-gap: 10px;
               overflow: hidden;
        }
-       
+
        .splide__slide .cardd .headCard {
               text-align: center;
        }
-       
+
        .splide__slide .cardd .cardTitle {
               text-align: center;
               width: 95%;
        }
-       .reviewSec .splide__pagination{
-       bottom: -0.5em !important;
+
+       .reviewSec .splide__pagination {
+              bottom: -0.5em !important;
        }
+
        .reviewSec .splide__pagination__page.is-active {
-              background-color:var(--main-clr) !important;
+              background-color: var(--main-clr) !important;
        }
-       
+
        .reviewSec .splide__slide .cardd .headCard img {
               height: 100px;
               width: 70%;
@@ -569,7 +748,7 @@ bottom: -0.5em !important;
               padding: 2px;
               border: 3px solid var(--main-clr) !important;
        }
-       
+
 }
 
 /* Laptop Screen  */
