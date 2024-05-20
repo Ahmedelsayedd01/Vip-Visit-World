@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <!-- Icon Page -->
-    <link rel="icon" href="./images/logo page.jpg" />
+    <link rel="icon" href="./images/logo page.png" />
     <title>Vip Visit World</title>
     <!-- Icons Liberary -->
     <script
@@ -57,7 +57,7 @@
   <body>
     <!-- Loading Page Spiner -->
     <div id="loading">
-      <img id="loading-image" src="./images/logo page.jpg" alt="Loading..." />
+      <img id="loading-image" src="./images/logo page.png" alt="Loading..." />
     </div>
     <!-- Loading Page Spiner -->
     <!-- Container page -->
@@ -112,7 +112,7 @@
         <div class="wrapperNav">
           <div class="logoPage">
             <a href="./index.html">
-              <img src="images/logo page.jpg" alt="logo" />
+              <img src="images/logo page.png" alt="logo" />
             </a>
           </div>
           <div class="linksPage">
@@ -141,29 +141,32 @@
       </nav>
       <!-- Hero Section -->
       <section class="heroSec">
+        <a class="errowNext" href="#tickets">
+          <i class="fa-solid fa-angles-down"></i>
+        </a>
         <section class="splide" aria-labelledby="carousel-heading">
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
-                <img src="images/hero1.jpg" alt="" />
+                <img src="images/flight 1.jpg" alt="" />
               </li>
               <li class="splide__slide">
-                <img src="images/hero2.jpg" alt="" />
+                <img src="images/flight 2.jpg" alt="" />
               </li>
               <li class="splide__slide">
-                <img src="images/hero3.jpg" alt="" />
+                <img src="images/flight 3.jpg" alt="" />
               </li>
               <li class="splide__slide">
-                <img src="images/hero4.jpg" alt="" />
+                <img src="images/flight 4.jpg" alt="" />
               </li>
               <li class="splide__slide">
-                <img src="images/hero5.jpg" alt="" />
+                <img src="images/flight 5.jpg" alt="" />
               </li>
               <li class="splide__slide">
-                <img src="images/hero6.jpg" alt="" />
+                <img src="images/flight 6.jpg" alt="" />
               </li>
               <li class="splide__slide">
-                <img src="images/hero7.jpg" alt="" />
+                <img src="images/flight 7.png" alt="" />
               </li>
             </ul>
           </div>
@@ -174,11 +177,68 @@
       <!-- visa Section -->
       <section></section>
       <!-- Hotels Section -->
-      <section></section>
-      <!-- Agent Section -->
-      <section></section>
+      <section class="hotelsSec">
+        <div class="headerSec">
+          <h2>Hotels</h2>
+          <a class="refLink" href="./Pages/hotels.html"
+            >See All Hotels <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+        <section class="splide" aria-labelledby="carousel-heading">
+
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="cardHotel">
+                  <img src="./images/hotel1.jpg" alt="hotel" />
+                  <span
+                    >Burj Al Arab and Emirates Palace 'most recommended'
+                    hotels</span
+                  >
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="cardHotel">
+                  <img src="./images/hotel2.jpg" alt="hotel" />
+                  <span
+                    >Burj Al Arab and Emirates Palace 'most recommended'
+                    hotels</span
+                  >
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="cardHotel">
+                  <img src="./images/hotel3.webp" alt="hotel" />
+                  <span
+                    >Burj Al Arab and Emirates Palace 'most recommended'
+                    hotels</span
+                  >
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="cardHotel">
+                  <img src="./images/hotel4.jpg" alt="hotel" />
+                  <span
+                    >Burj Al Arab and Emirates Palace 'most recommended'
+                    hotels</span
+                  >
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="cardHotel">
+                  <img src="./images/hotel5.jpg" alt="hotel" />
+                  <span
+                    >Burj Al Arab and Emirates Palace 'most recommended'
+                    hotels</span
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
       <!-- Google Reviews Section  -->
-      <section class="reviewSec">
+      <section class="reviewSec" id="tickets">
         <div class="leftReviewSec">
           <span>Good</span>
           <ul>
@@ -456,7 +516,7 @@
           <!-- Logo && Links Scoail -->
           <a href="./index.html">
             <img
-              src="./images/logo page.jpg"
+              src="./images/logo page.png"
               style="height: 80px; margin-bottom: 10px"
               alt="logo"
           /></a>
@@ -643,7 +703,6 @@
         var splide = new Splide(".rightReviewSec .splide", {
           autoplay: true,
           arrows: false,
-          autoplay: true,
           interval: 2000,
           speed: 2000,
           type: "loop",
@@ -667,7 +726,6 @@
           autoplay: true,
           arrows: false,
           pagination: false,
-          autoplay: true,
           interval: 3000,
           speed: 3000,
           type: "loop",
@@ -676,9 +734,24 @@
           // gap: "2em",
           omitEnd: true,
         });
+        var splideHotels = new Splide(".hotelsSec .splide", {
+          autoplay: true,
+          // arrows: false,
+          pagination: false,
 
-        splideHero.mount();
+          // interval: 3000,
+          // speed: 3000,
+          // type: "loop",
+          
+          perPage: "auto",
+          focus: 0,
+          gap: "2em",
+          omitEnd: true,
+        });
+
         splide.mount();
+        splideHero.mount();
+        splideHotels.mount();
         /* Show && hide menu */
         $(".showMenu").click(function () {
           $(this).addClass("d-none");
