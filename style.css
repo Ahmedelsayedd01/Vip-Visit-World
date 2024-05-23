@@ -31,7 +31,7 @@ ul {
 }
 
 body {
-       position: relative;
+       /* position: relative; */
        background-color: #fff !important;
 }
 
@@ -70,6 +70,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Container Wrapper Page */
+body {
+       overflow-x: hidden;
+}
+
 .containerr {
        width: 100%;
        display: flex;
@@ -164,11 +168,14 @@ header {
 
 /* Nav Page */
 nav {
-       position: relative;
+       position: sticky;
+       top: 0;
+       z-index: 300;
        width: 100%;
        display: flex;
        align-items: center;
        justify-content: center;
+       background-color: #fff;
        box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2) !important;
 }
 
@@ -209,7 +216,7 @@ nav .wrapperNav .linksPage .menuMobil {
        position: absolute;
        width: 100%;
        bottom: -255%;
-       left: 100%;
+       left: 103%;
        border-radius: 0 0 15px 15px;
        background-color: var(--third-clr);
        display: flex;
@@ -239,7 +246,8 @@ nav .wrapperNav .linksPage .menuTap {
 .heroSec {
        position: relative;
        width: 100%;
-       max-height: 82vh;
+
+       height: auto;
        /* background-color: red; */
        overflow: hidden;
 }
@@ -256,14 +264,13 @@ nav .wrapperNav .linksPage .menuTap {
        width: 100%;
        height: 1000%;
        background-color: #000;
-       opacity: 0.2;
+       opacity: 0.15;
 }
 
 .heroSec .splide__list .splide__slide img {
        width: 100%;
        height: 100%;
-       object-fit: cover;
-       /* object-fit: contain; */
+       object-fit: fill;
        object-position: center;
        vertical-align: middle;
 }
@@ -306,8 +313,8 @@ nav .wrapperNav .linksPage .menuTap {
 
 
 
-/* Tickts Section*/
-.ticktsSec .splide .cardHotel img {
+/* Visea Section*/
+.viseSec .splide .cardHotel img {
        width: 100%;
        height: 100%;
        background-color: red;
@@ -317,7 +324,19 @@ nav .wrapperNav .linksPage .menuTap {
        transition: all 0.4s ease-in-out;
 }
 
+/* Tickts Section*/
+.ticktsSec .splide .cardHotel img {
+       width: 100%;
+       height: 100%;
+       background-color: red;
+       transform: scale(1);
+       object-fit: cover;
+       object-position: center;
+       transition: all 0.4s ease-in-out;
+}
+
 /* Hotels Section*/
+.viseSec,
 .hotelsSec,
 .ticktsSec {
        width: 93% !important;
@@ -329,6 +348,7 @@ nav .wrapperNav .linksPage .menuTap {
        row-gap: 20px;
 }
 
+.viseSec .headerSec,
 .hotelsSec .headerSec,
 .ticktsSec .headerSec {
        width: 100%;
@@ -337,12 +357,14 @@ nav .wrapperNav .linksPage .menuTap {
        justify-content: space-between;
 }
 
+.viseSec .headerSec h2,
 .hotelsSec .headerSec h2,
 .ticktsSec .headerSec h2 {
        font-size: 1.8rem;
        font-weight: 700;
 }
 
+.viseSec .headerSec .refLink,
 .hotelsSec .headerSec .refLink,
 .ticktsSec .headerSec .refLink {
        display: flex;
@@ -353,12 +375,14 @@ nav .wrapperNav .linksPage .menuTap {
        transition: all 0.3s ease-in-out;
 }
 
+.viseSec .headerSec .refLink:hover,
 .hotelsSec .headerSec .refLink:hover,
 .ticktsSec .headerSec .refLink:hover {
        color: var(--second-clr);
 }
 
 /* #### */
+.viseSec .splide,
 .hotelsSec .splide,
 .ticktsSec .splide {
        width: 100%;
@@ -366,11 +390,13 @@ nav .wrapperNav .linksPage .menuTap {
        cursor: grab;
 }
 
+.viseSec .splide .splide__list,
 .hotelsSec .splide .splide__list,
 .ticktsSec .splide .splide__list {
        padding: 10px 0 !important;
 }
 
+.viseSec .splide .cardHotel,
 .hotelsSec .splide .cardHotel,
 .ticktsSec .splide .cardHotel {
        position: relative;
@@ -382,6 +408,7 @@ nav .wrapperNav .linksPage .menuTap {
        margin-bottom: 10px;
 }
 
+.viseSec .splide .cardHotel::after,
 .hotelsSec .splide .cardHotel::after,
 .ticktsSec .splide .cardHotel::after {
        content: "";
@@ -405,12 +432,14 @@ nav .wrapperNav .linksPage .menuTap {
        transition: all 0.4s ease-in-out;
 }
 
+.viseSec .splide .cardHotel:hover img,
 .hotelsSec .splide .cardHotel:hover img,
 .ticktsSec .splide .cardHotel:hover img {
        transform: scale(1.2);
        filter: blur(1.5px);
 }
 
+.viseSec .splide .cardHotel span,
 .hotelsSec .splide .cardHotel span,
 .ticktsSec .splide .cardHotel span {
        position: absolute;
@@ -424,11 +453,13 @@ nav .wrapperNav .linksPage .menuTap {
        z-index: 30;
 }
 
+.viseSec .splide .cardHotel:hover span,
 .hotelsSec .splide .cardHotel:hover span,
 .ticktsSec .splide .cardHotel:hover span {
        top: 50%;
 }
 
+.viseSec .splide .splide__arrow,
 .hotelsSec .splide .splide__arrow,
 .ticktsSec .splide .splide__arrow {
        background-color: var(--main-clr) !important;
@@ -438,17 +469,20 @@ nav .wrapperNav .linksPage .menuTap {
        transform: none !important;
 }
 
+.viseSec .splide__arrow--prev,
 .hotelsSec .splide__arrow--prev,
 .ticktsSec .splide__arrow--prev {
        left: inherit !important;
        right: 50px !important;
 }
 
+.viseSec .splide__arrow--next,
 .hotelsSec .splide__arrow--next,
 .ticktsSec .splide__arrow--next {
        right: 0% !important;
 }
 
+.viseSec .splide .splide__arrow svg,
 .hotelsSec .splide .splide__arrow svg,
 .ticktsSec .splide .splide__arrow svg {
        font-size: 1.2rem;
@@ -648,7 +682,24 @@ nav .wrapperNav .linksPage .menuTap {
 }
 
 /* Mobil Screen  */
-@media (max-width:767px) {}
+@media (min-width:850px) {
+
+       /* Hero Section */
+       .heroSec {
+              width: 100%;
+              /* height: 700px; */
+              /* background-color: red; */
+              overflow: hidden;
+       }
+
+       .heroSec .splide__list .splide__slide img {
+              /* max-height: 100%; */
+              width: inherit;
+              /* object-fit: cover; */
+              height: 610px;
+              /* object-position:50%; */
+       }
+}
 
 /* Tablet Screen  */
 @media (min-width:990px) {
@@ -716,22 +767,6 @@ nav .wrapperNav .linksPage .menuTap {
        nav .wrapperNav .linksPage .menuTap li a {
               color: #000;
               font-size: 1.2rem;
-       }
-
-       /* Hero Section */
-       .heroSec {
-              width: 100%;
-              /* max-height: 82vh; */
-              /* background-color: red; */
-              overflow: hidden;
-       }
-
-       .heroSec .splide__list .splide__slide img {
-              /* max-height: 100%; */
-              width: inherit;
-              object-fit: contain;
-              height: inherit;
-              /* object-position:50%; */
        }
 
 
