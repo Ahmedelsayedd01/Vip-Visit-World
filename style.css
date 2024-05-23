@@ -262,7 +262,8 @@ nav .wrapperNav .linksPage .menuTap {
 .heroSec .splide__list .splide__slide img {
        width: 100%;
        height: 100%;
-       object-fit: contain;
+       object-fit: cover;
+       /* object-fit: contain; */
        object-position: center;
        vertical-align: middle;
 }
@@ -315,6 +316,7 @@ nav .wrapperNav .linksPage .menuTap {
        object-position: right;
        transition: all 0.4s ease-in-out;
 }
+
 /* Hotels Section*/
 .hotelsSec,
 .ticktsSec {
@@ -393,7 +395,7 @@ nav .wrapperNav .linksPage .menuTap {
        z-index: 10;
 }
 
-.hotelsSec .splide .cardHotel img{
+.hotelsSec .splide .cardHotel img {
        width: 100%;
        height: 100%;
        background-color: red;
@@ -424,7 +426,7 @@ nav .wrapperNav .linksPage .menuTap {
 
 .hotelsSec .splide .cardHotel:hover span,
 .ticktsSec .splide .cardHotel:hover span {
-       top:   50%;
+       top: 50%;
 }
 
 .hotelsSec .splide .splide__arrow,
@@ -727,6 +729,7 @@ nav .wrapperNav .linksPage .menuTap {
        .heroSec .splide__list .splide__slide img {
               /* max-height: 100%; */
               width: inherit;
+              object-fit: contain;
               height: inherit;
               /* object-position:50%; */
        }
