@@ -1,11 +1,640 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Document</title>
-</head>
-<body>
-       <h1>Tickets Page</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Styles/tickets.css" />
+    <!-- Icon Page -->
+    <link rel="icon" href="../images/logo page.png" />
+    <title>Vip Visit World</title>
+    <!-- Icons Liberary -->
+    <script
+      src="https://kit.fontawesome.com/bbda8ae88d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap Liberary -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Jquery Liberary -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Splide Liberary to swip -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+    <script>
+      /* BUT Sniper When load Page */
+      $(window).on("load", function () {
+        $("#loading").hide();
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Loading Page Spiner -->
+    <div id="loading">
+      <img id="loading-image" src="../images/logo page.png" alt="Loading..." />
+    </div>
+    <!-- Loading Page Spiner -->
+    <!-- Header Page Section -->
+    <header>
+      <!-- Socail Company -->
+      <div class="sociaLink">
+        <ul class="">
+          <li>
+            <a
+              style="color: inherit"
+              href="https://www.facebook.com/TheRoyalVisionTourism"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://instagram.com/royal.visiontourism?utm_source=qr&amp;igshid=OGU0MmVlOWVjOQ=="
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/d494440"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="http://www.linkedin.com/in/royal-vision-tourism-26162226b"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <!-- Email Company -->
+      <div class="emailCom">
+        <span><i class="fas fa-envelope"></i> info@vip-visitworld.com</span>
+      </div>
+      <!-- Phone Company -->
+      <div class="phoneCom">
+        <span
+          ><i class="fas fa-phone"></i> +971 4 357 3000, +971 524 263 007</span
+        >
+      </div>
+    </header>
+    <!-- Nav Page Section -->
+    <nav>
+      <div class="wrapperNav">
+        <div class="logoPage">
+          <a href="../index.html">
+            <img src="../images/logo page.png" alt="logo" />
+          </a>
+        </div>
+        <div class="linksPage">
+          <span class="showMenu">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+          <span class="hideMenu d-none">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+          <ul class="menuMobil">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Pages/aboutUs.html">About Us</a></li>
+            <li><a href="../Pages/vise.html">Vise</a></li>
+            <li><a href="#">Tickets</a></li>
+            <li><a href="../Pages/hotels.html">Hotels</a></li>
+          </ul>
+          <ul class="menuTap">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Pages/aboutUs.html">About Us</a></li>
+            <li><a href="../Pages/vise.html">Vise</a></li>
+            <li class="activeTap"><a href="#">Tickets</a></li>
+            <li><a href="../Pages/hotels.html">Hotels</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="containerr">
+      <h1>Tickets Page</h1>
+
+      <!-- Google Reviews Section  -->
+      <section class="reviewSec">
+        <div class="leftReviewSec">
+          <span>Good</span>
+          <ul>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li>
+              <i class="fas fa-star-half-alt"></i>
+            </li>
+          </ul>
+          <span>Based on 466 Reviews </span>
+          <img src="../images/google.png" alt="google" />
+        </div>
+        <div class="rightReviewSec">
+          <section class="splide" aria-labelledby="carousel-heading">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="cardd">
+                    <div class="headCard">
+                      <img src="../images/user 1.jpg" alt="user" />
+                    </div>
+                    <h4 class="cardName">yatain sankar</h4>
+                    <p class="cardTitle">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nesciunt assumenda tempore possimus molestias recusandae
+                      corporis hic fugiat dolorum sunt quam.
+                    </p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="cardd">
+                    <div class="headCard">
+                      <img src="../images/user 2.jpg" alt="user" />
+                    </div>
+                    <h4 class="cardName">yatain sankar</h4>
+                    <p class="cardTitle">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nesciunt assumenda tempore possimus molestias recusandae
+                      corporis hic fugiat dolorum sunt quam.
+                    </p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="cardd">
+                    <div class="headCard">
+                      <img src="../images/user 3.jpg" alt="user" />
+                    </div>
+                    <h4 class="cardName">yatain sankar</h4>
+                    <p class="cardTitle">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nesciunt assumenda tempore possimus molestias recusandae
+                      corporis hic fugiat dolorum sunt quam.
+                    </p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="cardd">
+                    <div class="headCard">
+                      <img src="../images/user 4.jpg" alt="user" />
+                    </div>
+                    <h4 class="cardName">yatain sankar</h4>
+                    <p class="cardTitle">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nesciunt assumenda tempore possimus molestias recusandae
+                      corporis hic fugiat dolorum sunt quam.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- FAQ Section -->
+      <section
+        class="faqSec container-fluid pt-5 pb-5"
+        style="background-color: ghostwhite"
+      >
+        <div class="container">
+          <h2>FAQ</h2>
+          <div id="accordion" class="mt-4">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card border mb-3">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <a
+                        class="btn"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        What is the best desert safari in Dubai?
+                      </a>
+                    </h5>
+                  </div>
+
+                  <div
+                    id="collapseOne"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      Looking for an unforgettable desert safari experience in
+                      Dubai? Look no further than Royal Vision Tourism. As part
+                      of the Emirates Group, we are committed to providing the
+                      highest standards of service and safety. Our desert safari
+                      deals in Dubai include everything you need for a fantastic
+                      day out in the desert, from pick-up and drop-off to food
+                      and beverages and other desert activities. Relax and enjoy
+                      your adventure!
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card border mb-3">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <a
+                        class="btn collapsed"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        What is included in a Dubai deset Safari
+                      </a>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      Book Premium Desert Safari and take the advantage of our
+                      thrilling Arabian desert adventure along with the other
+                      desert activities and entertainment. Ideal for people who
+                      are looking for an adventure, the desert safari offers you
+                      a dune bashing opportunities in the desert of Dubai. With
+                      a 4 x 4 vehicle, this journey is safe and at the same time
+                      exhilarating too.
+                      <br /><br /><b>Inclusions</b>
+                      <ul>
+                        <li>
+                          Experience high level of personalized services on this
+                          desert safari.
+                        </li>
+                        <li>
+                          It’s particularly great for our guests looking for
+                          utmost privacy and comforts in their desert adventure.
+                        </li>
+                        <li>
+                          Feel the thrill of a lifetime with an electrifying
+                          dune bash over colossal desert sands.
+                        </li>
+                        <li>
+                          Take in desert sunset views and enjoy more cultural
+                          activities such as camel ride, henna tattooing, Shisha
+                          smoking etc.
+                        </li>
+                        <li>
+                          Savor a lavish BBQ dinner complete with both
+                          vegetarian and non-vegetarian dishes.
+                        </li>
+                        <li>
+                          Watch traditional Arabic performances including Belly
+                          Dance and Tanura show.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card border mb-3">
+                  <div class="card-header" id="heading3">
+                    <h5 class="mb-0">
+                      <a
+                        class="btn"
+                        data-toggle="collapse"
+                        data-target="#collapse3"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        How can I book a Tours &amp; Activities in Dubai?
+                      </a>
+                    </h5>
+                  </div>
+
+                  <div
+                    id="collapse3"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      Booking a Tours &amp; Activities in Dubai is now easier
+                      than ever. You can choose from a variety of packages and
+                      inclusions, depending on your needs. Royal Vision Tourism
+                      makes it easy for you to book your Tours &amp; Activities
+                      online, so all you have to do is select the dates and
+                      enjoy your experience! So, how do you book a Tours &amp;
+                      Activities in Dubai? It's simple! Just follow these easy
+                      steps:
+                      <br />
+                      <br />
+                      <ul>
+                        <li>Choose the package that suits you best</li>
+                        <li>Select the dates for your experience</li>
+                        <li>Click and Pay</li>
+                        <li>
+                          Sit back and relax - we'll take care of the rest!
+                        </li>
+                      </ul>
+
+                      So, what are you waiting for? Book your Tours &amp;
+                      Activities in Dubai today and enjoy an experience you'll
+                      never forget!
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card border mb-3">
+                  <div class="card-header" id="heading4">
+                    <h5 class="mb-0">
+                      <a
+                        class="btn"
+                        data-toggle="collapse"
+                        data-target="#collapse4"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        Must-see attractions and sights in Dubai
+                      </a>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapse4"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>Atlantis The Palm</li>
+                        <li>At The Top, Burj Khalifa</li>
+                        <li>Burj Al Arab Jumeirah</li>
+                        <li>Desert safari</li>
+                        <li>Dubai Aquarium &amp; Underwater Zoo</li>
+                        <li>Dubai Frame</li>
+
+                        <li>Dubai Miracle Garden</li>
+                        <li>Global Village</li>
+                        <li>The Dubai Mall</li>
+                        <li>The View at the Palm</li>
+                        <li>Museum of theFuture</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer Section -->
+      <footer class="container-fluid pt-lg-5 pt-md-5 pt-sm-5 pt-5 footerSec">
+        <div class="footerWrapper">
+          <!-- Logo && Links Scoail -->
+          <a href="../index.html">
+            <img
+              src="../images/logo page.png"
+              style="height: 55px; margin-bottom: 10px"
+              alt="logo"
+          /></a>
+          <div class="col-lg-3 col-md-6">
+            <div class="row">
+              <div class="col-xl-2 col-lg-2 col-sm-1 col-2">
+                <i class="fas fa-map-marker-alt footerAddressIcon"></i>
+              </div>
+              <div class="col-xl-10 col-lg-10 col-sm-11 col-10">
+                <p class="footerAddress pr-lg-2">Abu Dhabi , UAE</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xl-2 col-lg-2 col-sm-1 col-2">
+                <i class="fas fa-phone footerMoileIcon"></i>
+              </div>
+              <div class="col-xl-10 col-lg-10 col-sm-11 col-10">
+                <p class="footerMoile">+9713135133152</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xl-2 col-lg-2 col-sm-1 col-2">
+                <i class="fab fa-whatsapp footerMoileIcon"></i>
+              </div>
+              <div class="col-xl-10 col-lg-10 col-sm-11 col-10">
+                <p class="footerMoile">+97135125121325</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xl-2 col-lg-2 col-sm-1 col-2">
+                <i class="far fa-envelope footerEmailIcon"></i>
+              </div>
+              <div class="col-xl-10 col-lg-10 col-sm-11 col-10">
+                <p class="footerEmail">info@vip-visitworld.com</p>
+              </div>
+            </div>
+
+            <ul class="subSocialink mt-3">
+              <li>
+                <a
+                  target="_blank"
+                  style="color: inherit"
+                  href="https://www.facebook.com/TheRoyalVisionTourism"
+                  ><i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <a
+                target="_blank"
+                style="color: inherit"
+                href="https://www.facebook.com/TheRoyalVisionTourism"
+              >
+              </a>
+              <li>
+                <a
+                  target="_blank"
+                  style="color: inherit"
+                  href="https://www.facebook.com/TheRoyalVisionTourism"
+                ></a
+                ><a
+                  target="_blank"
+                  style="color: inherit"
+                  href="https://api.whatsapp.com/send?phone=+971523051000&amp;text=Hello! I’ve got an Enquiry."
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  style="color: inherit"
+                  href="https://instagram.com/royal.visiontourism?utm_source=qr&amp;igshid=OGU0MmVlOWVjOQ=="
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  style="color: inherit"
+                  href="http://www.linkedin.com/in/royal-vision-tourism-26162226b"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  style="color: inherit"
+                  href="https://twitter.com/d494440"
+                  ><i class="fab fa-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Quick Links -->
+          <div class="col-lg-2 col-md-6 pt-4 pt-lg-0">
+            <h5 style="color: rgb(204, 204, 204)">Quick Links</h5>
+            <ul class="pageLink">
+              <a href="../Pages/aboutUs.html">
+                <li>About Us</li>
+              </a>
+              <!-- <a href="#">
+               <li>Contact Us</li>
+             </a> -->
+              <a href="#">
+                <li>Terms &amp; Conditions</li>
+              </a>
+              <a href="#">
+                <li>Privacy Policy</li>
+              </a>
+              <a href="#">
+                <li>Refund policy</li>
+              </a>
+              <a href="#">
+                <li>Blog</li>
+              </a>
+            </ul>
+          </div>
+          <!-- Group of Companies-->
+          <!-- <div class="col-lg-3 col-md-6 pt-4 pt-lg-0">
+           <h5 style="color: rgb(204, 204, 204)">Group of Companies</h5>
+           <ul class="pageLink">
+             <a href="#">
+               <li>THE ROYAL VISION TOURISM LLC</li>
+             </a>
+             <a href="#">
+               <li>DUBAI FOR DESTINATION TOURISM LLC</li>
+             </a>
+             <a href="#">
+               <li>GREAT CIRCLE EXPLORERS TOURISM LLC</li>
+             </a>
+             <a href="#">
+               <li>THE ROYAL VISON FLOATING RESTURANT LLC</li>
+             </a>
+             <a href="https://altazeemrestaurant.com">
+               <li>AL TAZEEM RESTAURANT LLC</li>
+             </a>
+           </ul>
+         </div> -->
+          <!-- Maps -->
+          <div class="col-lg-4 col-md-6 pt-4 pt-lg-0">
+            <iframe
+              class="mapSec"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d465132.97329578403!2d54.22896190509892!3d24.38647391118072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e440f723ef2b9%3A0xc7cc2e9341971108!2sAbu%20Dhabi%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2seg!4v1715882994579!5m2!1sen!2seg"
+              style="
+                border: 2px solid rgb(249, 165, 26) !important;
+                width: 100%;
+                height: 250px;
+              "
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+        <!-- Copy right -->
+        <div class="col-12 mt-4" style="border-top: 3px dashed !important">
+          <p class="copyright mt-4 mb-4">
+            © COPYRIGHT 2024. ALL RIGHTS RESERVED.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <!-- Section Right Socail -->
+    <div class="socailBar">
+      <a href="tel:+971523051000" class="scoailPhone">
+        <i class="fa fa-phone"></i>
+      </a>
+      <a
+        href="https://api.whatsapp.com/send?phone=+971524263007&amp;text=Hello! I’ve got an Enquiry through website"
+        class="scoailWhatsapp"
+        ><i class="fab fa-whatsapp"></i
+      ></a>
+      <a href="info@vip-visitworld.com" class="scoailGraduation"
+        ><i class="far fa-envelope"></i
+      ></a>
+    </div>
+    <!-- Container page -->
+    <script src="../jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        /* Splide Liberary */
+        var splideReviews = new Splide(".rightReviewSec .splide", {
+          autoplay: true,
+          arrows: false,
+          interval: 2000,
+          speed: 2000,
+          type: "loop",
+          perPage: 3,
+          breakpoints: {
+            990: {
+              perPage: 1,
+            },
+            1200: {
+              perPage: 3,
+            },
+            // 1024: {
+            //   perPage: 3,
+            // },
+          },
+          focus: 0,
+          gap: "2em",
+          omitEnd: true,
+        });
+
+        splideReviews.mount();
+
+        /* Show && hide menu */
+        $(".showMenu").click(function () {
+          $(this).addClass("d-none");
+          $(".hideMenu").removeClass("d-none");
+          $(".menuMobil").css("left", "0");
+        });
+        /* ######### */
+        $(".hideMenu").click(function () {
+          $(this).addClass("d-none");
+          $(".showMenu").removeClass("d-none");
+          $(".menuMobil").css("left", "215%");
+        });
+      });
+    </script>
+  </body>
 </html>
