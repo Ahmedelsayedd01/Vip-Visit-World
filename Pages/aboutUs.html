@@ -103,6 +103,13 @@
     </header>
     <!-- Nav Page Section -->
     <nav>
+      <ul class="menuMobil">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="../Pages/vise.html">Vise</a></li>
+        <li><a href="../Pages/tickets.html">Tickets</a></li>
+        <li><a href="../Pages/hotels.html">Hotels</a></li>
+      </ul>
       <div class="wrapperNav">
         <div class="logoPage">
           <a href="../index.html">
@@ -116,13 +123,7 @@
           <span class="hideMenu d-none">
             <i class="fa-solid fa-xmark"></i>
           </span>
-          <ul class="menuMobil">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="../Pages/vise.html">Vise</a></li>
-            <li><a href="../Pages/tickets.html">Tickets</a></li>
-            <li><a href="../Pages/hotels.html">Hotels</a></li>
-          </ul>
+
           <ul class="menuTap">
             <li><a href="../index.html">Home</a></li>
             <li class="activeTap">
@@ -758,13 +759,13 @@
         $(".showMenu").click(function () {
           $(this).addClass("d-none");
           $(".hideMenu").removeClass("d-none");
-          $(".menuMobil").css("left", "0");
+          $(".menuMobil").css("right", "0%");
         });
         /* ######### */
         $(".hideMenu").click(function () {
           $(this).addClass("d-none");
           $(".showMenu").removeClass("d-none");
-          $(".menuMobil").css("left", "215%");
+          $(".menuMobil").css("right", "100%");
         });
       });
     </script>
