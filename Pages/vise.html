@@ -103,6 +103,13 @@
     </header>
     <!-- Nav Page Section -->
     <nav>
+      <ul class="menuMobil">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Pages/aboutUs.html">About Us</a></li>
+        <li><a href="#">Vise</a></li>
+        <li><a href="../Pages/tickets.html">Tickets</a></li>
+        <li><a href="../Pages/hotels.html">Hotels</a></li>
+      </ul>
       <div class="wrapperNav">
         <div class="logoPage">
           <a href="../index.html">
@@ -116,13 +123,7 @@
           <span class="hideMenu d-none">
             <i class="fa-solid fa-xmark"></i>
           </span>
-          <ul class="menuMobil">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../Pages/aboutUs.html">About Us</a></li>
-            <li><a href="#">Vise</a></li>
-            <li><a href="../Pages/tickets.html">Tickets</a></li>
-            <li><a href="../Pages/hotels.html">Hotels</a></li>
-          </ul>
+
           <ul class="menuTap">
             <li><a href="../index.html">Home</a></li>
             <li><a href="../Pages/aboutUs.html">About Us</a></li>
@@ -134,7 +135,126 @@
       </div>
     </nav>
     <div class="containerr">
-      <h1>Visas Page</h1>
+      <!-- About Section  -->
+      <section class="contentAboutSec">
+        <!-- Title Page Section  -->
+        <div class="titlePage">
+          <span>Visas</span>
+        </div>
+        <!-- Content Company Section  -->
+        <div class="contentSec">
+          <div class="leftSec">
+            <p>
+              As a leading travel and tourism company, VIP Visit World is
+              dedicated to providing our clients with comprehensive services to
+              ensure a seamless and hassle-free travel experience. One of the
+              key services we offer is assisting with the procurement of
+              necessary visas for your international destinations.
+            </p>
+          </div>
+          <div class="rightSec">
+            <img src="../images/visas2.png" alt="photo" />
+          </div>
+        </div>
+      </section>
+      <!-- Mission Section  -->
+      <section class="contentMissionSec">
+        <div class="titlePage">
+          <span>Visa Expertise and Guidance:</span>
+        </div>
+        <p class="mb-0">
+          Navigating the complexities of visa requirements can be a daunting
+          task, but our team of visa experts is here to guide you every step of
+          the way. We have in-depth knowledge of the visa application process,
+          documentation requirements, and regulations for countries around the
+          world.<br />
+          Whether you're planning a leisure trip, a business venture, or a study
+          abroad program, we have the expertise to guide you through the
+          appropriate visa application process.
+        </p>
+        <!-- <div class="contentMission">
+          <p>
+            1. Personalization: We understand that every traveler is unique,
+            with their own passions, interests, and preferences. Our mission is
+            to create tailor-made itineraries that cater to your individual
+            needs, ensuring that your travel experience reflects your specific
+            desires and aspirations. We take the time to listen to your
+            requirements and work closely with you to design a journey that
+            resonates with your travel style.
+          </p>
+          <p>
+            2. Exceptional Service: At VIP Visit World, we are committed to
+            providing exceptional service at every stage of your journey. From
+            the moment you reach out to us until you return home, our dedicated
+            team of travel experts is here to assist you with meticulous
+            attention to detail. We go above and beyond to ensure that your
+            travel arrangements are seamless, your accommodations are of the
+            highest quality, and your experiences are truly extraordinary.
+          </p>
+          <p>
+            3. Unforgettable Experiences: We believe that travel should be a
+            collection of unforgettable moments that leave a lasting impression.
+            Our mission is to curate experiences that go beyond the ordinary,
+            allowing you to immerse yourself in the essence of each destination.
+            Whether it's exploring hidden gems, engaging with local communities,
+            or embarking on unique adventures, we strive to create experiences
+            that will stay with you long after your journey ends.
+          </p>
+          <p>
+            4. Authenticity and Cultural Immersion: We believe that cultural
+            immersion is an integral part of any meaningful travel experience.
+            Our mission is to connect you with the authentic aspects of each
+            destination, providing opportunities to engage with local
+            traditions, customs, and people. By fostering cultural understanding
+            and respect, we aim to create enriching experiences that broaden
+            your perspective and deepen your appreciation for the diversity of
+            our world.
+          </p>
+        </div> -->
+      </section>
+      <!-- Services Section  -->
+      <section class="contentServicesSec">
+        <div class="titlePage">
+          <span>Visa Types and Services:</span>
+        </div>
+        <div class="contentServices">
+          <div class="leftSec">
+            <p>
+              We understand that visa requirements can be complex and
+              ever-changing, which is why we continuously monitor updates and
+              changes in visa regulations to provide you with the most current
+              and accurate information.
+            </p>
+          </div>
+          <div class="rightSec">
+            <img src="../images/visas3.jpg" alt="photo" />
+          </div>
+        </div>
+        <div class="moreContent">
+          <span
+            >Visa Types and Services: VIP Visit World offers a wide range of
+            visa services to cater to your diverse travel needs,
+            including:</span
+          >
+          <div class="allVise">
+            <p>1.Tourist Visas.</p>
+            <p>2. Business Visas.</p>
+            <p>3. Student Visas.</p>
+            <p>4. Work Visas .</p>
+            <p>5. Family Visas.</p>
+            <p>6. Transit Visas.</p>
+          </div>
+          <div class="lastContent">
+            <p>
+              When you choose VIP Visit World for your visa services, you can
+              rest assured that your travel plans are in the hands of experts.
+              Our commitment to excellence, attention to detail, and
+              personalized approach will give you the confidence to explore the
+              world without the stress of visa complications.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <!-- Google Reviews Section  -->
       <section class="reviewSec">
@@ -514,7 +634,7 @@
           <div class="col-lg-2 col-md-6 pt-4 pt-lg-0">
             <h5 style="color: rgb(204, 204, 204)">Quick Links</h5>
             <ul class="pageLink">
-              <a href="../Pages/aboutUs.html">
+              <a href="#">
                 <li>About Us</li>
               </a>
               <!-- <a href="#">
@@ -626,13 +746,13 @@
         $(".showMenu").click(function () {
           $(this).addClass("d-none");
           $(".hideMenu").removeClass("d-none");
-          $(".menuMobil").css("left", "0");
+          $(".menuMobil").css("right", "0%");
         });
         /* ######### */
         $(".hideMenu").click(function () {
           $(this).addClass("d-none");
           $(".showMenu").removeClass("d-none");
-          $(".menuMobil").css("left", "215%");
+          $(".menuMobil").css("right", "100%");
         });
       });
     </script>
