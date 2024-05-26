@@ -92,9 +92,7 @@
       </div>
       <!-- Email Company -->
       <div class="emailCom">
-        <span
-          ><i class="fas fa-envelope"></i> info@vip-visitworld.com</span
-        >
+        <span><i class="fas fa-envelope"></i> info@vip-visitworld.com</span>
       </div>
       <!-- Phone Company -->
       <div class="phoneCom">
@@ -105,6 +103,13 @@
     </header>
     <!-- Nav Page Section -->
     <nav>
+      <ul class="menuMobil">
+        <li><a href="#">Home</a></li>
+        <li><a href="./Pages/aboutUs.html">About Us</a></li>
+        <li><a href="./Pages/vise.html">Vise</a></li>
+        <li><a href="./Pages/tickets.html">Tickets</a></li>
+        <li><a href="./Pages/hotels.html">Hotels</a></li>
+      </ul>
       <div class="wrapperNav">
         <div class="logoPage">
           <a href="#">
@@ -118,13 +123,6 @@
           <span class="hideMenu d-none">
             <i class="fa-solid fa-xmark"></i>
           </span>
-          <ul class="menuMobil">
-            <li><a href="#">Home</a></li>
-            <li><a href="./Pages/aboutUs.html">About Us</a></li>
-            <li><a href="./Pages/vise.html">Vise</a></li>
-            <li><a href="./Pages/tickets.html">Tickets</a></li>
-            <li><a href="./Pages/hotels.html">Hotels</a></li>
-          </ul>
           <ul class="menuTap">
             <li class="activeTap"><a href="#">Home</a></li>
             <li><a href="./Pages/aboutUs.html">About Us</a></li>
@@ -253,9 +251,7 @@
               <li class="splide__slide">
                 <div class="cardHotel">
                   <img src="./images/chine.jpg" alt="tickt" />
-                  <span
-                    >Ticket To China</span
-                  >
+                  <span>Ticket To China</span>
                 </div>
               </li>
               <li class="splide__slide">
@@ -623,9 +619,7 @@
                 <i class="fas fa-map-marker-alt footerAddressIcon"></i>
               </div>
               <div class="col-xl-10 col-lg-10 col-sm-11 col-10">
-                <p class="footerAddress pr-lg-2">
-                  Abu Dhabi , UAE
-                </p>
+                <p class="footerAddress pr-lg-2">Abu Dhabi , UAE</p>
               </div>
             </div>
 
@@ -884,13 +878,13 @@
         $(".showMenu").click(function () {
           $(this).addClass("d-none");
           $(".hideMenu").removeClass("d-none");
-          $(".menuMobil").css("left", "0");
+          $(".menuMobil").css("right", "0%");
         });
         /* ######### */
         $(".hideMenu").click(function () {
           $(this).addClass("d-none");
           $(".showMenu").removeClass("d-none");
-          $(".menuMobil").css("left", "215%");
+          $(".menuMobil").css("right", "100%");
         });
       });
     </script>
