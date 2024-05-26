@@ -209,11 +209,11 @@ nav .wrapperNav .linksPage>span i {
        cursor: pointer;
 }
 
-nav .wrapperNav .linksPage .menuMobil {
+nav .menuMobil {
        position: absolute;
        width: 100%;
        bottom: -255%;
-       left: 103%;
+       right: 100%;
        border-radius: 0 0 15px 15px;
        background-color: var(--third-clr);
        display: flex;
@@ -223,15 +223,16 @@ nav .wrapperNav .linksPage .menuMobil {
        padding: 10px 0;
        z-index: 100;
        transition: all 0.5s ease-in-out;
+       overflow: hidden;
 }
 
-nav .wrapperNav .linksPage .menuMobil li a {
+nav .menuMobil li a {
        color: #fff;
        font-size: 1.1rem;
        transition: all 0.4s ease-in-out;
 }
 
-nav .wrapperNav .linksPage .menuMobil li a:hover {
+nav .menuMobil li a:hover {
        color: var(--bg-clr);
 }
 
