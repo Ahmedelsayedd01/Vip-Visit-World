@@ -70,15 +70,6 @@ body::-webkit-scrollbar-thumb {
        height: 20%;
 }
 
-/* Container Wrapper Page */
-.containerr {
-       width: 100%;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       overflow: hidden !important;
-}
-
 /* Seciton socail Bar */
 .socailBar {
        position: fixed;
@@ -209,11 +200,11 @@ nav .wrapperNav .linksPage>span i {
        cursor: pointer;
 }
 
-nav .wrapperNav .linksPage .menuMobil {
+nav .menuMobil {
        position: absolute;
        width: 100%;
        bottom: -255%;
-       left: 103%;
+       right: 100%;
        border-radius: 0 0 15px 15px;
        background-color: var(--third-clr);
        display: flex;
@@ -223,29 +214,207 @@ nav .wrapperNav .linksPage .menuMobil {
        padding: 10px 0;
        z-index: 100;
        transition: all 0.5s ease-in-out;
+       overflow: hidden;
 }
 
-nav .wrapperNav .linksPage .menuMobil li a {
+nav .menuMobil li a {
        color: #fff;
+       width: auto;
        font-size: 1.1rem;
        transition: all 0.4s ease-in-out;
 }
 
-nav .wrapperNav .linksPage .menuMobil li a:hover {
+nav .menuMobil li a:hover {
        color: var(--bg-clr);
 }
 
-nav .wrapperNav .linksPage .menuTap {
+nav .menuTap {
        display: none;
 }
 
 
+/* Container Wrapper Page */
+.containerr {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       overflow: hidden !important;
+}
 
+/* Title page */
+.titlePage span {
+       position: relative;
+       font-size: 2.5rem;
+       font-weight: 500;
+       color: #000;
+       padding-bottom: 6px !important;
 
+}
 
+.titlePage span::after {
+       content: "";
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       width: 70px;
+       height: 6px;
+       border-radius: 10px;
+       background-color: var(--main-clr);
+       transition: all 0.4s ease-in-out;
+}
 
+.titlePage span:hover::after {
+       width: 100%;
+}
 
+/* Content About Section */
+.contentAboutSec .contentSec {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content: flex-start;
+       row-gap: 20px;
+}
 
+.contentAboutSec .contentSec .leftSec {
+       width: 100%;
+       text-align: left;
+       font-size: 120%;
+       line-height: 140%;
+}
+
+.contentAboutSec .contentSec .rightSec {
+       width: 100%;
+}
+
+.contentAboutSec .contentSec .rightSec img {
+       width: 100%;
+       /* height: 300px; */
+       border-radius: 15px;
+       border: 4px solid var(--main-clr) !important;
+       object-fit: cover;
+       object-position: center;
+}
+
+/* ##### */
+.contentAboutSec,
+.contentMissionSec,
+.contentServicesSec {
+       width: 90%;
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       margin-top: 20px;
+       row-gap: 20px;
+}
+
+/* Content Mission Section */
+.contentMissionSec>p {
+       width: 100%;
+       text-align: left;
+       font-size: 120%;
+       line-height: 140%;
+}
+
+.contentMissionSec .contentMission {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-between;
+       row-gap: 10px;
+}
+
+.contentMissionSec .contentMission>p::first-letter {
+       color: var(--main-clr);
+       font-size: 140%;
+       font-weight: 500;
+}
+
+.contentMissionSec .contentMission>p {
+       width: 100%;
+       text-align: left;
+       font-size: 100%;
+       line-height: 140%;
+}
+
+/* Services Section */
+.contentServicesSec .contentServices {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content: flex-start;
+       row-gap: 20px;
+}
+
+.contentServicesSec .contentServices .leftSec {
+       width: 100%;
+       text-align: left;
+       font-size: 120%;
+       line-height: 140%;
+}
+
+.contentServicesSec .contentServices .rightSec {
+       width: 100%;
+}
+
+.contentServicesSec .contentServices .rightSec img {
+       width: 100%;
+       /* height: 300px; */
+       border-radius: 15px;
+       border: 4px solid var(--main-clr) !important;
+       object-fit: cover;
+       object-position: center;
+}
+
+.contentServicesSec .moreContent {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content: flex-start;
+}
+
+.contentServicesSec .moreContent .allVise {
+       width: 100%;
+       margin-top: 10px;
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+       justify-content: space-between;
+       gap: 30px;
+}
+
+.contentServicesSec .moreContent .allVise>p {
+       width: auto;
+       text-align: left;
+       font-size: 110%;
+       line-height: 140%;
+}
+
+.contentServicesSec .moreContent .lastContent {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin-top: 20px;
+}
+
+.contentServicesSec .moreContent .lastContent>p {
+       width: 80%;
+       text-align: center;  
+       font-size: 130%;
+       font-weight: 500;
+       line-height: 150%;
+}
+
+.contentServicesSec .moreContent .allVise>p::first-letter {
+       color: var(--main-clr);
+       font-size: 140%;
+       font-weight: 500;
+}
 
 /* Google Reviews Section*/
 .reviewSec {
@@ -510,6 +679,100 @@ nav .wrapperNav .linksPage .menuTap {
               font-size: 1.2rem;
        }
 
+       /* Content About Section */
+       .contentAboutSec .contentSec {
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+              column-gap: 20px;
+       }
+
+       .contentAboutSec .contentSec .leftSec {
+              width: 50%;
+              text-align: left;
+              font-size: 140%;
+              line-height: 140%;
+       }
+
+       .contentAboutSec .contentSec .rightSec {
+              width: 50%;
+       }
+
+       .contentAboutSec .contentSec .rightSec img {
+              width: 100%;
+              /* height: 300px; */
+              border-radius: 15px;
+              border: 4px solid var(--main-clr) !important;
+              object-fit: cover;
+              object-position: center;
+       }
+
+       /* Content Mission Section */
+       .contentMissionSec .contentMission {
+              flex-wrap: wrap;
+              flex-direction: row;
+              align-items: flex-start;
+              justify-content: center;
+              column-gap: 70px;
+       }
+
+       .contentMissionSec .contentMission>p {
+              width: 40%;
+              text-align: left;
+              font-size: 110%;
+              line-height: 140%;
+       }
+
+       /* Services Section */
+       .contentServicesSec .contentServices {
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+              column-gap: 20px;
+       }
+
+       .contentServicesSec .contentServices .leftSec {
+              width: 50%;
+              text-align: left;
+              font-size: 140%;
+              line-height: 140%;
+       }
+
+       .contentServicesSec .contentServices .rightSec {
+              width: 50%;
+       }
+
+       .contentServicesSec .contentServices .rightSec img {
+              width: 100%;
+              height: 350px;
+              border-radius: 15px;
+              border: 4px solid var(--main-clr) !important;
+              object-fit: inherit;
+              object-position: center;
+       }
+
+       .contentServicesSec .moreContent>span {
+              text-align: left;
+              font-size: 130%;
+              font-weight: 500;
+              margin-bottom: 10px;
+              line-height: 140%;
+       }
+
+       .contentServicesSec .moreContent .allVise {
+              justify-content: flex-start;
+       }
+
+       .contentServicesSec .moreContent .allVise>p {
+              width: 31%;
+              text-align: left;
+              font-size: 130%;
+              line-height: 140%;
+       }
 
        /* Review Section */
        .reviewSec {
