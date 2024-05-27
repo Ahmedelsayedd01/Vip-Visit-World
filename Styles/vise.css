@@ -494,7 +494,7 @@ nav .menuTap {
 
 .reviewSec .splide__slide .cardd .headCard img {
        height: 100px;
-       /* width: 70%; */
+       width: 100px;
        border-radius: 50%;
        object-fit: cover;
        object-position: center;
@@ -822,7 +822,7 @@ nav .menuTap {
 
        .reviewSec .splide__slide .cardd .headCard img {
               height: 100px;
-              /* width: 70%; */
+              width: 100px;
               border-radius: 50%;
               object-fit: cover;
               object-position: center;
