@@ -103,6 +103,13 @@
     </header>
     <!-- Nav Page Section -->
     <nav>
+      <ul class="menuMobil">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Pages/aboutUs.html">About Us</a></li>
+        <li><a href="../Pages/vise.html">Visas</a></li>
+        <li><a href="#">Tickets</a></li>
+        <li><a href="../Pages/hotels.html">Hotels</a></li>
+      </ul>
       <div class="wrapperNav">
         <div class="logoPage">
           <a href="../index.html">
@@ -116,17 +123,13 @@
           <span class="hideMenu d-none">
             <i class="fa-solid fa-xmark"></i>
           </span>
-          <ul class="menuMobil">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../Pages/aboutUs.html">About Us</a></li>
-            <li><a href="../Pages/vise.html">Vise</a></li>
-            <li><a href="#">Tickets</a></li>
-            <li><a href="../Pages/hotels.html">Hotels</a></li>
-          </ul>
+
           <ul class="menuTap">
             <li><a href="../index.html">Home</a></li>
-            <li><a href="../Pages/aboutUs.html">About Us</a></li>
-            <li><a href="../Pages/vise.html">Vise</a></li>
+            <li>
+              <a href="../Pages/aboutUs.html">About Us</a>
+            </li>
+            <li><a href="../Pages/vise.html">Visas</a></li>
             <li class="activeTap"><a href="#">Tickets</a></li>
             <li><a href="../Pages/hotels.html">Hotels</a></li>
           </ul>
@@ -134,7 +137,91 @@
       </div>
     </nav>
     <div class="containerr">
-      <h1>Tickets Page</h1>
+      <!-- About Section  -->
+      <section class="contentAboutSec">
+        <!-- Title Page Section  -->
+        <div class="titlePage">
+          <span>Tickets</span>
+        </div>
+        <!-- Content Company Section  -->
+        <div class="contentSec">
+          <div class="leftSec">
+            <p>
+              VIP Visit World is a premier tour company dedicated to providing
+              our clients with exceptional travel experiences. With a focus on
+              delivering the highest level of service and convenience, we offer
+              airline tickets for all flight classes, enabling our discerning
+              customers to choose the perfect travel option to suit their
+              preferences and budget. Our team of travel experts is committed to
+              crafting personalized itineraries that cater to the unique needs
+              and desires of each individual. Whether you're seeking a luxurious
+              first-class experience, a comfortable business-class journey, or
+              an economical economy-class flight, we have you covered.
+            </p>
+          </div>
+          <div class="rightSec">
+            <img src="../images/tickts4.webp" alt="photo" />
+          </div>
+        </div>
+      </section>
+      <!-- Mission Section  -->
+      <section class="contentMissionSec">
+        <div class="titlePage">
+          <span>Flight Classes Offered:</span>
+        </div>
+        <p>
+          1. First Class: Indulge in the ultimate in-flight experience with our
+          first-class offerings. Enjoy spacious seating, gourmet dining, and
+          attentive service as you travel in unparalleled comfort and style.
+        </p>
+        <p>
+          2. Business Class: Elevate your journey with our business-class
+          options. Relax in the plush and ergonomic seats, savor delectable
+          meals, and take advantage of exclusive amenities to maximize your
+          productivity and comfort.
+        </p>
+        <p>
+          3. Economy Class: Discover exceptional value with our economy-class
+          tickets. Benefit from reliable on-time performance, complimentary
+          in-flight refreshments, and a comfortable cabin environment to ensure
+          a pleasant travel experience.
+        </p>
+      </section>
+      <!-- Services Section  -->
+      <section class="contentServicesSec">
+        <div class="titlePage">
+          <span>Our Commitment to Excellence:</span>
+        </div>
+        <div class="contentServices">
+          <div class="leftSec">
+            <p>
+              At VIP Visit World, we are committed to exceeding your
+              expectations at every step of your journey. Our team of
+              experienced travel consultants is dedicated to providing
+              personalized attention and tailored solutions to ensure your
+              travel plans are seamless and stress-free.
+            </p>
+          </div>
+          <div class="rightSec">
+            <img src="../images/travel1.jpg" alt="photo" />
+          </div>
+        </div>
+        <p>
+          We maintain strong partnerships with leading airlines, allowing us to
+          secure the best fares and exclusive offers for our clients. Our
+          comprehensive booking platform and 24/7 customer support further
+          enhance your booking experience, giving you the confidence to explore
+          the world with VIP Visit World.
+        </p>
+        <p>
+          World-Class Airlines and Flight Options: VIP Visit World partners with
+          the leading airlines around the globe to provide our clients with an
+          unparalleled selection of flight options. From major international
+          carriers to regional airlines, we offer flights to destinations across
+          the world, ensuring you have the flexibility to choose the perfect
+          route and schedule to fit your travel needs.
+        </p>
+      </section>
 
       <!-- Google Reviews Section  -->
       <section class="reviewSec">
@@ -514,7 +601,7 @@
           <div class="col-lg-2 col-md-6 pt-4 pt-lg-0">
             <h5 style="color: rgb(204, 204, 204)">Quick Links</h5>
             <ul class="pageLink">
-              <a href="../Pages/aboutUs.html">
+              <a href="#">
                 <li>About Us</li>
               </a>
               <!-- <a href="#">
@@ -626,13 +713,13 @@
         $(".showMenu").click(function () {
           $(this).addClass("d-none");
           $(".hideMenu").removeClass("d-none");
-          $(".menuMobil").css("left", "0");
+          $(".menuMobil").css("right", "0%");
         });
         /* ######### */
         $(".hideMenu").click(function () {
           $(this).addClass("d-none");
           $(".showMenu").removeClass("d-none");
-          $(".menuMobil").css("left", "215%");
+          $(".menuMobil").css("right", "100%");
         });
       });
     </script>
