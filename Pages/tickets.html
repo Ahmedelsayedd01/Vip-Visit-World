@@ -47,6 +47,10 @@
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
       rel="stylesheet"
     />
+    <!-- INITIALIZE AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- \\\ INITIALIZE AOS /// -->
     <script>
       /* BUT Sniper When load Page */
       $(window).on("load", function () {
@@ -140,12 +144,20 @@
       <!-- About Section  -->
       <section class="contentAboutSec">
         <!-- Title Page Section  -->
-        <div class="titlePage">
+        <div
+          class="titlePage"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
           <span>Tickets</span>
         </div>
         <!-- Content Company Section  -->
         <div class="contentSec">
-          <div class="leftSec">
+          <div
+            class="leftSec"
+            data-aos="fade-up-right"
+            data-aos-anchor-placement="center-bottom"
+          >
             <p>
               VIP Visit World is a premier tour company dedicated to providing
               our clients with exceptional travel experiences. With a focus on
@@ -159,28 +171,36 @@
               an economical economy-class flight, we have you covered.
             </p>
           </div>
-          <div class="rightSec">
+          <div
+            class="rightSec"
+            data-aos="fade-up-left"
+            data-aos-anchor-placement="center-bottom"
+          >
             <img src="../images/tickts4.webp" alt="photo" />
           </div>
         </div>
       </section>
       <!-- Mission Section  -->
       <section class="contentMissionSec">
-        <div class="titlePage">
+        <div
+          class="titlePage"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
           <span>Flight Classes Offered:</span>
         </div>
-        <p>
+        <p data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           1. First Class: Indulge in the ultimate in-flight experience with our
           first-class offerings. Enjoy spacious seating, gourmet dining, and
           attentive service as you travel in unparalleled comfort and style.
         </p>
-        <p>
+        <p data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           2. Business Class: Elevate your journey with our business-class
           options. Relax in the plush and ergonomic seats, savor delectable
           meals, and take advantage of exclusive amenities to maximize your
           productivity and comfort.
         </p>
-        <p>
+        <p data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           3. Economy Class: Discover exceptional value with our economy-class
           tickets. Benefit from reliable on-time performance, complimentary
           in-flight refreshments, and a comfortable cabin environment to ensure
@@ -189,11 +209,19 @@
       </section>
       <!-- Services Section  -->
       <section class="contentServicesSec">
-        <div class="titlePage">
+        <div
+          class="titlePage"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
           <span>Our Commitment to Excellence:</span>
         </div>
         <div class="contentServices">
-          <div class="leftSec">
+          <div
+            class="leftSec"
+            data-aos="fade-up-right"
+            data-aos-anchor-placement="center-bottom"
+          >
             <p>
               At VIP Visit World, we are committed to exceeding your
               expectations at every step of your journey. Our team of
@@ -202,18 +230,22 @@
               travel plans are seamless and stress-free.
             </p>
           </div>
-          <div class="rightSec">
+          <div
+            class="rightSec"
+            data-aos="fade-up-left"
+            data-aos-anchor-placement="center-bottom"
+          >
             <img src="../images/travel1.jpg" alt="photo" />
           </div>
         </div>
-        <p>
+        <p data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           We maintain strong partnerships with leading airlines, allowing us to
           secure the best fares and exclusive offers for our clients. Our
           comprehensive booking platform and 24/7 customer support further
           enhance your booking experience, giving you the confidence to explore
           the world with VIP Visit World.
         </p>
-        <p>
+        <p data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           World-Class Airlines and Flight Options: VIP Visit World partners with
           the leading airlines around the globe to provide our clients with an
           unparalleled selection of flight options. From major international
@@ -222,9 +254,12 @@
           route and schedule to fit your travel needs.
         </p>
       </section>
-
       <!-- Google Reviews Section  -->
-      <section class="reviewSec">
+      <section
+        class="reviewSec"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+      >
         <div class="leftReviewSec">
           <span>Good</span>
           <ul>
@@ -302,6 +337,8 @@
       </section>
       <!-- FAQ Section -->
       <section
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
         class="faqSec container-fluid pt-5 pb-5"
         style="background-color: ghostwhite"
       >
@@ -309,7 +346,7 @@
           <h2>FAQ</h2>
           <div id="accordion" class="mt-4">
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-lg-12">
                 <div class="card border mb-3">
                   <div class="card-header" id="headingOne">
                     <h5 class="mb-0">
@@ -320,7 +357,8 @@
                         aria-expanded="true"
                         aria-controls="collapseOne"
                       >
-                        What is the best desert safari in Dubai?
+                        How can I reach your customer support team if I have any
+                        questions or need assistance during my travel?
                       </a>
                     </h5>
                   </div>
@@ -332,14 +370,18 @@
                     data-parent="#accordion"
                   >
                     <div class="card-body">
-                      Looking for an unforgettable desert safari experience in
-                      Dubai? Look no further than Royal Vision Tourism. As part
-                      of the Emirates Group, we are committed to providing the
-                      highest standards of service and safety. Our desert safari
-                      deals in Dubai include everything you need for a fantastic
-                      day out in the desert, from pick-up and drop-off to food
-                      and beverages and other desert activities. Relax and enjoy
-                      your adventure!
+                      We have a dedicated customer support team available to
+                      assist you during your travel. You can reach our customer
+                      support team through multiple channels for prompt
+                      assistance. Our preferred method of contact is via our
+                      24/7 helpline, where our knowledgeable and responsive
+                      representatives are ready to address any questions or
+                      concerns you may have. Additionally, you can also reach
+                      out to us via email or through our online contact form on
+                      our website. Rest assured, we prioritize excellent
+                      customer service and aim to provide timely and effective
+                      support to ensure your travel experience is as smooth and
+                      enjoyable as possible.
                     </div>
                   </div>
                 </div>
@@ -354,7 +396,8 @@
                         aria-expanded="false"
                         aria-controls="collapseTwo"
                       >
-                        What is included in a Dubai deset Safari
+                        Can you help me find the best deals and options for my
+                        desired travel dates and destinations?
                       </a>
                     </h5>
                   </div>
@@ -365,46 +408,24 @@
                     data-parent="#accordion"
                   >
                     <div class="card-body">
-                      Book Premium Desert Safari and take the advantage of our
-                      thrilling Arabian desert adventure along with the other
-                      desert activities and entertainment. Ideal for people who
-                      are looking for an adventure, the desert safari offers you
-                      a dune bashing opportunities in the desert of Dubai. With
-                      a 4 x 4 vehicle, this journey is safe and at the same time
-                      exhilarating too.
-                      <br /><br /><b>Inclusions</b>
-                      <ul>
-                        <li>
-                          Experience high level of personalized services on this
-                          desert safari.
-                        </li>
-                        <li>
-                          It’s particularly great for our guests looking for
-                          utmost privacy and comforts in their desert adventure.
-                        </li>
-                        <li>
-                          Feel the thrill of a lifetime with an electrifying
-                          dune bash over colossal desert sands.
-                        </li>
-                        <li>
-                          Take in desert sunset views and enjoy more cultural
-                          activities such as camel ride, henna tattooing, Shisha
-                          smoking etc.
-                        </li>
-                        <li>
-                          Savor a lavish BBQ dinner complete with both
-                          vegetarian and non-vegetarian dishes.
-                        </li>
-                        <li>
-                          Watch traditional Arabic performances including Belly
-                          Dance and Tanura show.
-                        </li>
-                      </ul>
+                      Absolutely! Our team is dedicated to helping you find the
+                      best deals and options for your travel needs. We
+                      understand the importance of finding competitive prices
+                      without compromising on quality. By leveraging our
+                      extensive network and partnerships with airlines, hotels,
+                      and other travel providers, we can assist you in securing
+                      the most favorable rates for your desired travel dates and
+                      destinations. Whether you're looking for affordable
+                      flights, discounted hotel packages, or exclusive
+                      promotions, we will diligently search for the options that
+                      align with your preferences and budget. Our goal is to
+                      ensure that you receive the best value for your investment
+                      and have a memorable travel experience.
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-12">
                 <div class="card border mb-3">
                   <div class="card-header" id="heading3">
                     <h5 class="mb-0">
@@ -415,7 +436,8 @@
                         aria-expanded="true"
                         aria-controls="collapseOne"
                       >
-                        How can I book a Tours &amp; Activities in Dubai?
+                        How long does it typically take to obtain a visa for my
+                        destination(s)?
                       </a>
                     </h5>
                   </div>
@@ -427,28 +449,27 @@
                     data-parent="#accordion"
                   >
                     <div class="card-body">
-                      Booking a Tours &amp; Activities in Dubai is now easier
-                      than ever. You can choose from a variety of packages and
-                      inclusions, depending on your needs. Royal Vision Tourism
-                      makes it easy for you to book your Tours &amp; Activities
-                      online, so all you have to do is select the dates and
-                      enjoy your experience! So, how do you book a Tours &amp;
-                      Activities in Dubai? It's simple! Just follow these easy
-                      steps:
-                      <br />
-                      <br />
-                      <ul>
-                        <li>Choose the package that suits you best</li>
-                        <li>Select the dates for your experience</li>
-                        <li>Click and Pay</li>
-                        <li>
-                          Sit back and relax - we'll take care of the rest!
-                        </li>
-                      </ul>
-
-                      So, what are you waiting for? Book your Tours &amp;
-                      Activities in Dubai today and enjoy an experience you'll
-                      never forget!
+                      The processing time for obtaining a visa can vary
+                      depending on several factors, including the destination
+                      country and the type of visa you are applying for. Each
+                      country has its own visa processing procedures and
+                      timelines. While some visas can be processed and obtained
+                      within a few days, others may require a longer processing
+                      period, often ranging from a few weeks to a couple of
+                      months. To provide you with accurate information about the
+                      specific visa processing time for your destination(s), we
+                      recommend consulting with our experienced visa specialists
+                      or referring to the official consulate or embassy website
+                      of the country you plan to visit. Our team will assist you
+                      in gathering the necessary documentation and guide you
+                      through the visa application process to ensure a smooth
+                      and timely submission. It's important to plan your travel
+                      well in advance and initiate the visa application process
+                      as early as possible to allow ample time for processing
+                      and avoid any last-minute complications. We are here to
+                      support you throughout the visa application process and
+                      provide any necessary guidance to help you obtain your
+                      visa within the required timeframe.
                     </div>
                   </div>
                 </div>
@@ -463,7 +484,8 @@
                         aria-expanded="false"
                         aria-controls="collapseTwo"
                       >
-                        Must-see attractions and sights in Dubai
+                        What is the booking process for hotel reservations, and
+                        how far in advance should I make my booking?
                       </a>
                     </h5>
                   </div>
@@ -474,20 +496,34 @@
                     data-parent="#accordion"
                   >
                     <div class="card-body">
-                      <ul>
-                        <li>Atlantis The Palm</li>
-                        <li>At The Top, Burj Khalifa</li>
-                        <li>Burj Al Arab Jumeirah</li>
-                        <li>Desert safari</li>
-                        <li>Dubai Aquarium &amp; Underwater Zoo</li>
-                        <li>Dubai Frame</li>
-
-                        <li>Dubai Miracle Garden</li>
-                        <li>Global Village</li>
-                        <li>The Dubai Mall</li>
-                        <li>The View at the Palm</li>
-                        <li>Museum of theFuture</li>
-                      </ul>
+                      Our hotel booking process is designed to be seamless and
+                      convenient. Once you have chosen your desired
+                      accommodation, our team will handle the reservation
+                      process on your behalf. We will collect all the necessary
+                      information from you, including your travel dates, room
+                      preferences, and any special requests you may have. We
+                      will then proceed with making the booking with the hotel
+                      directly or through our trusted partners. Regarding the
+                      timing of your hotel booking, it is generally recommended
+                      to make your reservation as early as possible, especially
+                      if you have specific travel dates or if you are planning
+                      to visit during peak seasons or popular events. This
+                      allows us to secure your preferred accommodation and
+                      ensures the best availability and rates. Ideally, we
+                      suggest making your hotel reservation at least several
+                      weeks or even months in advance to have a wider range of
+                      options and to secure the best deals. However, we
+                      understand that travel plans can sometimes be spontaneous
+                      or subject to change. In such cases, we will do our best
+                      to accommodate last-minute hotel bookings or provide
+                      alternative options based on availability. Our team is
+                      here to guide you through the hotel booking process,
+                      answer any questions you may have, and assist you in
+                      selecting the most suitable accommodation based on your
+                      preferences, budget, and desired amenities. We strive to
+                      make the booking process convenient and efficient,
+                      ensuring that you have a comfortable and enjoyable stay
+                      during your travels.
                     </div>
                   </div>
                 </div>
@@ -601,24 +637,24 @@
           <div class="col-lg-2 col-md-6 pt-4 pt-lg-0">
             <h5 style="color: rgb(204, 204, 204)">Quick Links</h5>
             <ul class="pageLink">
-              <a href="#">
+              <a href="../Pages/aboutUs.html">
                 <li>About Us</li>
               </a>
               <!-- <a href="#">
                <li>Contact Us</li>
              </a> -->
-              <a href="#">
+              <a href="../Pages/terms_conditions.html" target="_blank">
                 <li>Terms &amp; Conditions</li>
               </a>
-              <a href="#">
+              <a href="../Pages/privacy_policy.html" target="_blank">
                 <li>Privacy Policy</li>
               </a>
-              <a href="#">
+              <a href="../Pages/refund_policy.html" target="_blank">
                 <li>Refund policy</li>
               </a>
-              <a href="#">
+              <!-- <a href="#">
                 <li>Blog</li>
-              </a>
+              </a> -->
             </ul>
           </div>
           <!-- Group of Companies-->
@@ -659,7 +695,7 @@
         </div>
         <!-- Copy right -->
         <div class="col-12 mt-4" style="border-top: 3px dashed !important">
-          <p class="copyright mt-4 mb-4">
+          <p class="copyright mt-4 mb-0 pb-4">
             © COPYRIGHT 2024. ALL RIGHTS RESERVED.
           </p>
         </div>
@@ -720,6 +756,14 @@
           $(this).addClass("d-none");
           $(".showMenu").removeClass("d-none");
           $(".menuMobil").css("right", "100%");
+        });
+      });
+    </script>
+    <!-- INITIALIZE AOS -->
+    <script>
+      $(document).ready(function () {
+        AOS.init({
+          duration: 900,
         });
       });
     </script>
