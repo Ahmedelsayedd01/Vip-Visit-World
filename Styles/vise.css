@@ -90,6 +90,7 @@ body::-webkit-scrollbar-thumb {
        padding: 10px;
        transition: all 0.3s ease;
        font-size: 25px;
+       color: #000 !important;
 }
 
 .socailBar a:hover {
@@ -404,7 +405,7 @@ nav .menuTap {
 
 .contentServicesSec .moreContent .lastContent>p {
        width: 80%;
-       text-align: center;  
+       text-align: center;
        font-size: 130%;
        font-weight: 500;
        line-height: 150%;
