@@ -295,7 +295,7 @@ nav .menuTap {
        border-radius: 15px;
        border: 4px solid var(--main-clr) !important;
        object-fit: cover;
-       object-position: center;
+       object-position: right;
 }
 
 /* ##### */
