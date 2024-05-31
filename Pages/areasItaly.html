@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Styles/areasItaly.css" />
+    <!-- Icon Page -->
+    <link rel="icon" href="../images/logo page.png" />
+    <title>Vip Visit World</title>
+    <!-- Icons Liberary -->
+    <script
+      src="https://kit.fontawesome.com/bbda8ae88d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap Liberary -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Jquery Liberary -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Splide Liberary to swip -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+    <!-- INITIALIZE AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- \\\ INITIALIZE AOS /// -->
+    <script>
+      /* BUT Sniper When load Page */
+      $(window).on("load", function () {
+        $("#loading").hide();
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Loading Page Spiner -->
+    <div id="loading">
+      <img id="loading-image" src="../images/logo page.png" alt="Loading..." />
+    </div>
+    <!-- Header Page Section -->
+    <header>
+      <!-- Socail Company -->
+      <!-- <div class="sociaLink">
+        <ul>
+          <li>
+            <a
+              style="color: inherit"
+              href="https://www.facebook.com/profile.php?id=61559566049053&mibextid=ZbWKwL"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/vipvisitworld?igsh=MjdobWZrZ3V1Y2Uz"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </div> -->
+      <!-- Email Company -->
+      <div class="emailCom">
+        <span><i class="fas fa-envelope"></i> info@vip-visitworld.com</span>
+      </div>
+      <!-- Phone Company -->
+      <div class="phoneCom">
+        <span><i class="fas fa-phone"></i> +971501250790</span>
+      </div>
+    </header>
+    <!-- Nav Page Section -->
+    <nav>
+      <ul class="menuMobil">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Pages/aboutUs.html">About Us</a></li>
+        <li><a href="../Pages/vise.html">Visas</a></li>
+        <li><a href="../Pages/tickets.html">Tickets</a></li>
+        <li><a href="../Pages/hotels.html">Hotels</a></li>
+      </ul>
+      <div class="wrapperNav">
+        <div class="logoPage">
+          <a href="../index.html">
+            <img src="../images/logo page.png" alt="logo" />
+          </a>
+        </div>
+        <div class="linksPage">
+          <span class="showMenu">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+          <span class="hideMenu d-none">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+
+          <ul class="menuTap">
+            <li><a href="../index.html">Home</a></li>
+            <li>
+              <a href="../Pages/aboutUs.html">About Us</a>
+            </li>
+            <li><a href="../Pages/vise.html">Visas</a></li>
+            <li><a href="../Pages/tickets.html">Tickets</a></li>
+            <li><a href="../Pages/hotels.html">Hotels</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="containerr">
+      <!-- About Section  -->
+      <section class="contentAboutSec">
+        <!-- Title Page Section  -->
+        <div
+          class="titlePage"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
+          <span>Tourist Areas In Italy:</span>
+        </div>
+        <!-- Content Company Section  -->
+        <!-- Colosseum (Rome) -->
+        <div class="contentSec">
+          <div
+            class="leftSec"
+            data-aos="fade-up-right"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <h1>1. Colosseum (Rome)</h1>
+            <p>
+              Colosseum in Rome is an iconic symbol of the Roman Empire's power
+              and engineering prowess. Constructed nearly 2,000 years ago, this
+              massive amphitheater hosted grand spectacles, including
+              gladiatorial contests and public executions, that captivated
+              ancient Roman audiences. Despite suffering damage over the
+              centuries, the Colosseum remains one of the most recognizable and
+              frequently visited landmarks in the world, drawing millions of
+              tourists each year to marvel at its impressive scale and
+              architectural grandeur.
+            </p>
+          </div>
+          <div
+            class="rightSec"
+            data-aos="fade-up-left"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <img src="../images/Colosseum (Rome).jpg" alt="photo" />
+          </div>
+        </div>
+        <!-- Leaning Tower of Pisa (Pisa) -->
+        <div class="contentSec">
+          <div
+            class="rightSec"
+            data-aos="fade-up-left"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <img src="../images/Leaning Tower of Pisa (Pisa).jpg" alt="photo" />
+          </div>
+          <div
+            class="leftSec"
+            data-aos="fade-up-right"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <h1>2. Leaning Tower of Pisa (Pisa)</h1>
+            <p>
+              The Leaning Tower of Pisa is an instantly recognizable landmark
+              renowned for its distinctive tilt. This freestanding bell tower,
+              part of the Pisa Cathedral complex, took nearly 200 years to
+              construct and began leaning during the building process due to an
+              inadequate foundation on soft ground. Despite the tower's
+              precarious angle, which has been stabilized over the centuries, it
+              continues to attract visitors who flock to the site to take iconic
+              photographs of themselves appearing to prop up or push the tower.
+            </p>
+          </div>
+        </div>
+        <!-- Canals of Venice -->
+        <div class="contentSec">
+          <div
+            class="leftSec"
+            data-aos="fade-up-right"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <h1>3. Canals of Venice</h1>
+            <p>
+              The intricate network of canals that crisscross the historic city
+              of Venice is one of Italy's most renowned and romantic settings.
+              These waterways, which serve as the city's main "streets," are
+              lined with stunning medieval and Renaissance architecture and
+              traverse past iconic landmarks like the Rialto Bridge and St.
+              Mark's Square. Traveling by traditional Venetian gondola is a
+              quintessential experience for visitors, allowing them to glide
+              peacefully through the picturesque canals and capture the serene
+              beauty of this unique floating city.
+            </p>
+          </div>
+          <div
+            class="rightSec"
+            data-aos="fade-up-left"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <img src="../images/Canals of Venice.webp" alt="photo" />
+          </div>
+        </div>
+        <!-- Trevi Fountain (Rome) -->
+        <div class="contentSec">
+          <div
+            class="rightSec"
+            data-aos="fade-up-left"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <img src="../images/Trevi Fountain (Rome).jpg" alt="photo" />
+          </div>
+          <div
+            class="leftSec"
+            data-aos="fade-up-right"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <h1>4. Trevi Fountain (Rome)</h1>
+            <p>
+              Located in the heart of Rome, the Trevi Fountain is a magnificent
+              Baroque masterpiece that has enchanted visitors for centuries.
+              Commissioned in the 18th century, the fountain's elaborate design
+              features towering statues of Roman gods and mythological figures
+              set against a dramatic rock cliff backdrop. Tradition holds that
+              tossing a coin into the fountain's waters will ensure a return
+              visit to the Eternal City, making it one of Rome's most popular
+              tourist attractions.
+            </p>
+          </div>
+        </div>
+        <!-- Duomo of Milan -->
+        <div class="contentSec">
+          <div
+            class="leftSec"
+            data-aos="fade-up-right"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <h1>5. Duomo of Milan</h1>
+            <p>
+              Duomo of Milan is an awe-inspiring Gothic cathedral that stands as
+              the largest church in Italy and one of the largest in the world.
+              Construction on this mammoth marble structure began in the late
+              14th century and took nearly six centuries to complete, resulting
+              in an architectural wonder adorned with thousands of statues,
+              spires, and buttresses. Visitors can climb to the cathedral's
+              rooftop terraces for panoramic views of Milan and marvel at the
+              Duomo's intricate details, which blend Gothic and Renaissance
+              styles into a truly breathtaking masterpiece.
+            </p>
+          </div>
+          <div
+            class="rightSec"
+            data-aos="fade-up-left"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <img src="../images/Duomo of Milan.webp" alt="photo" />
+          </div>
+        </div>
+      </section>
+      <!-- Google Reviews Section  -->
+      <section
+        class="reviewSec"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+      >
+        <div class="leftReviewSec">
+          <span>Good</span>
+          <ul>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li>
+              <i class="fas fa-star-half-alt"></i>
+            </li>
+          </ul>
+          <span>Based on 466 Reviews </span>
+          <img src="../images/google.png" alt="google" />
+        </div>
+        <div class="rightReviewSec">
+          <section class="splide" aria-labelledby="carousel-heading">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="cardd">
+                    <div class="headCard">
+                      <img src="../images/user 1.jpg" alt="user" />
+                    </div>
+                    <h4 class="cardName">James Smith</h4>
+                    <p class="cardTitle">
+                      I had an incredible experience with this travel company.
+                      They provided exceptional support throughout my journey.
+                      From assisting with visa requirements to securing
+                      comfortable hotel accommodations, their attention to
+                      detail was exceptional. Their prompt communication and
+                      willingness to go the extra mile made me feel valued as a
+                      customer.
+                    </p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="cardd">
+                    <div class="headCard">
+                      <img src="../images/user 2.jpg" alt="user" />
+                    </div>
+                    <h4 class="cardName">Emily Anderson</h4>
+                    <p class="cardTitle">
+                      I recently planned my dream vacation with this travel
+                      company, and I couldn't be happier with the experience.
+                      From the moment I contacted them, their team was
+                      incredibly helpful and attentive. They took the time to
+                      understand my preferences and crafted an itinerary that
+                      exceeded my expectations.
+                    </p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="cardd">
+                    <div class="headCard">
+                      <img src="../images/user 3.jpg" alt="user" />
+                    </div>
+                    <h4 class="cardName">John Johnson</h4>
+                    <p class="cardTitle">
+                      I've been a frequent traveler, and I can confidently say
+                      that this travel company is top-notch. Their expertise in
+                      visa processing made my travel hassle-free. The team
+                      guided me through the entire visa application process,
+                      ensuring all documents were in order. They also helped
+                      with ticket reservations, finding the best deals for my
+                      desired destinations.
+                    </p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="cardd">
+                    <div class="headCard">
+                      <img src="../images/user 4.jpg" alt="user" />
+                    </div>
+                    <h4 class="cardName">William Brown</h4>
+                    <p class="cardTitle">
+                      I recently used this travel company for my vacation, and I
+                      must say they exceeded my expectations. Their attention to
+                      detail and personalized service were impressive. From
+                      handling my flight reservations to arranging a fantastic
+                      hotel, everything was seamless. Their team was
+                      knowledgeable, responsive, and made sure I had a memorable
+                      trip.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- FAQ Section -->
+      <section
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+        class="faqSec container-fluid pt-5 pb-5"
+        style="background-color: ghostwhite"
+      >
+        <div class="container">
+          <h2>FAQ</h2>
+          <div id="accordion" class="mt-4">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card border mb-3">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <a
+                        class="btn"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        How can I reach your customer support team if I have any
+                        questions or need assistance during my travel?
+                      </a>
+                    </h5>
+                  </div>
+
+                  <div
+                    id="collapseOne"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      We have a dedicated customer support team available to
+                      assist you during your travel. You can reach our customer
+                      support team through multiple channels for prompt
+                      assistance. Our preferred method of contact is via our
+                      24/7 helpline, where our knowledgeable and responsive
+                      representatives are ready to address any questions or
+                      concerns you may have. Additionally, you can also reach
+                      out to us via email or through our online contact form on
+                      our website. Rest assured, we prioritize excellent
+                      customer service and aim to provide timely and effective
+                      support to ensure your travel experience is as smooth and
+                      enjoyable as possible.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card border mb-3">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <a
+                        class="btn collapsed"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        Can you help me find the best deals and options for my
+                        desired travel dates and destinations?
+                      </a>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      Absolutely! Our team is dedicated to helping you find the
+                      best deals and options for your travel needs. We
+                      understand the importance of finding competitive prices
+                      without compromising on quality. By leveraging our
+                      extensive network and partnerships with airlines, hotels,
+                      and other travel providers, we can assist you in securing
+                      the most favorable rates for your desired travel dates and
+                      destinations. Whether you're looking for affordable
+                      flights, discounted hotel packages, or exclusive
+                      promotions, we will diligently search for the options that
+                      align with your preferences and budget. Our goal is to
+                      ensure that you receive the best value for your investment
+                      and have a memorable travel experience.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="card border mb-3">
+                  <div class="card-header" id="heading3">
+                    <h5 class="mb-0">
+                      <a
+                        class="btn"
+                        data-toggle="collapse"
+                        data-target="#collapse3"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        How long does it typically take to obtain a visa for my
+                        destination(s)?
+                      </a>
+                    </h5>
+                  </div>
+
+                  <div
+                    id="collapse3"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      The processing time for obtaining a visa can vary
+                      depending on several factors, including the destination
+                      country and the type of visa you are applying for. Each
+                      country has its own visa processing procedures and
+                      timelines. While some visas can be processed and obtained
+                      within a few days, others may require a longer processing
+                      period, often ranging from a few weeks to a couple of
+                      months. To provide you with accurate information about the
+                      specific visa processing time for your destination(s), we
+                      recommend consulting with our experienced visa specialists
+                      or referring to the official consulate or embassy website
+                      of the country you plan to visit. Our team will assist you
+                      in gathering the necessary documentation and guide you
+                      through the visa application process to ensure a smooth
+                      and timely submission. It's important to plan your travel
+                      well in advance and initiate the visa application process
+                      as early as possible to allow ample time for processing
+                      and avoid any last-minute complications. We are here to
+                      support you throughout the visa application process and
+                      provide any necessary guidance to help you obtain your
+                      visa within the required timeframe.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card border mb-3">
+                  <div class="card-header" id="heading4">
+                    <h5 class="mb-0">
+                      <a
+                        class="btn"
+                        data-toggle="collapse"
+                        data-target="#collapse4"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        What is the booking process for hotel reservations, and
+                        how far in advance should I make my booking?
+                      </a>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapse4"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      Our hotel booking process is designed to be seamless and
+                      convenient. Once you have chosen your desired
+                      accommodation, our team will handle the reservation
+                      process on your behalf. We will collect all the necessary
+                      information from you, including your travel dates, room
+                      preferences, and any special requests you may have. We
+                      will then proceed with making the booking with the hotel
+                      directly or through our trusted partners. Regarding the
+                      timing of your hotel booking, it is generally recommended
+                      to make your reservation as early as possible, especially
+                      if you have specific travel dates or if you are planning
+                      to visit during peak seasons or popular events. This
+                      allows us to secure your preferred accommodation and
+                      ensures the best availability and rates. Ideally, we
+                      suggest making your hotel reservation at least several
+                      weeks or even months in advance to have a wider range of
+                      options and to secure the best deals. However, we
+                      understand that travel plans can sometimes be spontaneous
+                      or subject to change. In such cases, we will do our best
+                      to accommodate last-minute hotel bookings or provide
+                      alternative options based on availability. Our team is
+                      here to guide you through the hotel booking process,
+                      answer any questions you may have, and assist you in
+                      selecting the most suitable accommodation based on your
+                      preferences, budget, and desired amenities. We strive to
+                      make the booking process convenient and efficient,
+                      ensuring that you have a comfortable and enjoyable stay
+                      during your travels.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer Section -->
+      <footer class="container-fluid pt-lg-5 pt-md-5 pt-sm-5 pt-5 footerSec">
+        <div class="footerWrapper">
+          <!-- Logo && Links Scoail -->
+          <a href="../index.html">
+            <img
+              src="../images/logo page.png"
+              style="height: 55px; margin-bottom: 10px"
+              alt="logo"
+          /></a>
+          <div class="col-lg-3 col-md-6">
+            <div class="row">
+              <div class="col-xl-2 col-lg-2 col-sm-1 col-2">
+                <i class="fas fa-map-marker-alt footerAddressIcon"></i>
+              </div>
+              <div class="col-xl-10 col-lg-10 col-sm-11 col-10">
+                <p class="footerAddress pr-lg-2">
+                  Corniche Street, Sheikh Sultan Building, 15th floor, Office
+                  1502 , Abu Dhabi , UAE
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xl-2 col-lg-2 col-sm-1 col-2">
+                <i class="fas fa-phone footerMoileIcon"></i>
+              </div>
+              <div class="col-xl-10 col-lg-10 col-sm-11 col-10">
+                <p class="footerMoile">+971501250790 , +201222221474</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xl-2 col-lg-2 col-sm-1 col-2">
+                <i class="fab fa-whatsapp footerMoileIcon"></i>
+              </div>
+              <div class="col-xl-10 col-lg-10 col-sm-11 col-10">
+                <p class="footerMoile">+201222221474</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xl-2 col-lg-2 col-sm-1 col-2">
+                <i class="far fa-envelope footerEmailIcon"></i>
+              </div>
+              <div class="col-xl-10 col-lg-10 col-sm-11 col-10">
+                <p class="footerEmail">info@vip-visitworld.com</p>
+              </div>
+            </div>
+
+            <ul class="subSocialink mt-3">
+              <li>
+                <a
+                  target="_blank"
+                  style="color: inherit"
+                  href="https://www.facebook.com/profile.php?id=61559566049053&mibextid=ZbWKwL"
+                  ><i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  style="color: inherit"
+                  href="https://api.whatsapp.com/send?phone=+201222221474&amp;text=Hello! I saw the company's website and I want to inquire about something."
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  style="color: inherit"
+                  href="https://www.instagram.com/vipvisitworld?igsh=MjdobWZrZ3V1Y2Uz"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <!-- <li>
+                <a
+                  target="_blank"
+                  style="color: inherit"
+                  href="http://www.linkedin.com/in/royal-vision-tourism-26162226b"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  style="color: inherit"
+                  href="https://twitter.com/d494440"
+                  ><i class="fab fa-twitter"></i>
+                </a>
+              </li> -->
+            </ul>
+          </div>
+          <!-- Quick Links -->
+          <div class="col-lg-2 col-md-6 pt-4 pt-lg-0">
+            <h5 style="color: rgb(204, 204, 204)">Quick Links</h5>
+            <ul class="pageLink">
+              <a href="../Pages/aboutUs.html">
+                <li>About Us</li>
+              </a>
+              <!-- <a href="#">
+               <li>Contact Us</li>
+             </a> -->
+              <a href="../Pages/terms_conditions.html" target="_blank">
+                <li>Terms &amp; Conditions</li>
+              </a>
+              <a href="../Pages/privacy_policy.html" target="_blank">
+                <li>Privacy Policy</li>
+              </a>
+              <a href="../Pages/refund_policy.html" target="_blank">
+                <li>Refund policy</li>
+              </a>
+              <!-- <a href="#">
+                <li>Blog</li>
+              </a> -->
+            </ul>
+          </div>
+          <!-- Group of Companies-->
+          <!-- <div class="col-lg-3 col-md-6 pt-4 pt-lg-0">
+           <h5 style="color: rgb(204, 204, 204)">Group of Companies</h5>
+           <ul class="pageLink">
+             <a href="#">
+               <li>THE ROYAL VISION TOURISM LLC</li>
+             </a>
+             <a href="#">
+               <li>DUBAI FOR DESTINATION TOURISM LLC</li>
+             </a>
+             <a href="#">
+               <li>GREAT CIRCLE EXPLORERS TOURISM LLC</li>
+             </a>
+             <a href="#">
+               <li>THE ROYAL VISON FLOATING RESTURANT LLC</li>
+             </a>
+             <a href="https://altazeemrestaurant.com">
+               <li>AL TAZEEM RESTAURANT LLC</li>
+             </a>
+           </ul>
+         </div> -->
+          <!-- Maps -->
+          <div class="col-lg-4 col-md-6 pt-4 pt-lg-0">
+            <iframe
+              class="mapSec"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3632.5744926857406!2d54.462422675209616!3d24.43084587821219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e43373f224805%3A0x444a28a09e54fccd!2sSultan%20Building!5e0!3m2!1sen!2seg!4v1717178103063!5m2!1sen!2seg"
+              style="
+                border: 2px solid rgb(249, 165, 26) !important;
+                width: 100%;
+                height: 250px;
+              "
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+        <!-- Copy right -->
+        <div class="col-12 mt-4" style="border-top: 3px dashed !important">
+          <p class="copyright mt-4 mb-0 pb-4">
+            © COPYRIGHT 2024. ALL RIGHTS RESERVED.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <!-- Section Right Socail -->
+    <div class="socailBar">
+      <a href="tel:+971501250790" class="scoailPhone" target="_blank">
+        <i class="fa fa-phone"></i>
+      </a>
+      <a
+        href="https://api.whatsapp.com/send?phone=+201222221474&amp;text=Hello! I saw the company's website and I want to inquire about something"
+        class="scoailWhatsapp"
+        target="_blank"
+        ><i class="fab fa-whatsapp"></i
+      ></a>
+      <a
+        class="socialGraduation"
+        href="mailto:info@vip-visitworld.com"
+        target="_blank"
+      >
+        <i class="far fa-envelope"></i>
+      </a>
+    </div>
+    <!-- Container page -->
+    <script src="../Scripts/tickets.js"></script>
+  </body>
+</html>
