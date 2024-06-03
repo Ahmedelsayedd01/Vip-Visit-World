@@ -696,6 +696,7 @@ nav .menuTap {
        }
 
        nav .wrapperNav .linksPage {
+              width: 100%;
               justify-content: flex-start;
        }
 
