@@ -3,6 +3,7 @@ $(document).ready(function () {
   AOS.init({
     duration: 900,
   });
+  
   /* Splide Liberary */
   var splideHero = new Splide(".heroSec .splide", {
     autoplay: true,
