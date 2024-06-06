@@ -601,7 +601,11 @@ nav .menuTap {
        color: #cacaca;
        font-size: 15px;
 }
-
+.logoDevelop {
+       width: 50px;
+       border-radius: 50%;
+       margin: 0 5px;
+}
 /* Mobil Screen  */
 @media (min-width:850px) {}
 
