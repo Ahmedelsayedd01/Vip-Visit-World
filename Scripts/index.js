@@ -22,6 +22,7 @@ $(document).ready(function () {
     gap: "2em",
     omitEnd: true,
   });
+  
   var splideHero = new Splide(".heroSec .splide", {
     autoplay: true,
     arrows: false,
