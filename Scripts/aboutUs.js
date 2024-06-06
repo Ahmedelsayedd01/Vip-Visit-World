@@ -31,6 +31,7 @@ $(document).ready(function () {
     $(".hideMenu").removeClass("d-none");
     $(".menuMobil").css("right", "0%");
   });
+  
   /* ######### */
   $(".hideMenu").click(function () {
     $(this).addClass("d-none");
